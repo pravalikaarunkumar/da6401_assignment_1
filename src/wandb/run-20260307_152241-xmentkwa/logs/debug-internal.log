@@ -1,0 +1,14 @@
+{"time":"2026-03-07T15:22:43.9629413+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T15:22:44.4858475+05:30","level":"INFO","msg":"stream: created new stream","id":"xmentkwa"}
+{"time":"2026-03-07T15:22:44.4872955+05:30","level":"INFO","msg":"handler: started","stream_id":"xmentkwa"}
+{"time":"2026-03-07T15:22:44.4979997+05:30","level":"INFO","msg":"stream: started","id":"xmentkwa"}
+{"time":"2026-03-07T15:22:44.4987133+05:30","level":"INFO","msg":"writer: started","stream_id":"xmentkwa"}
+{"time":"2026-03-07T15:22:44.4987133+05:30","level":"INFO","msg":"sender: started","stream_id":"xmentkwa"}
+{"time":"2026-03-07T15:40:57.2693677+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":265272}
+{"time":"2026-03-07T15:40:57.2686435+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T15:43:14.5715577+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T15:43:14.9322993+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T15:43:14.9923429+05:30","level":"INFO","msg":"stream: closing","id":"xmentkwa"}
+{"time":"2026-03-07T15:43:14.993194+05:30","level":"INFO","msg":"handler: closed","stream_id":"xmentkwa"}
+{"time":"2026-03-07T15:43:14.9954046+05:30","level":"INFO","msg":"sender: closed","stream_id":"xmentkwa"}
+{"time":"2026-03-07T15:43:14.9954046+05:30","level":"INFO","msg":"stream: closed","id":"xmentkwa"}

@@ -1,0 +1,51 @@
+# sweep_config.yaml
+# ------------------
+# W&B Hyperparameter Sweep  (≥ 100 runs required for Q2.2)
+#
+# Usage:
+#   cd src
+#   wandb sweep sweep_config.yaml          # prints a sweep ID
+#   wandb agent <SWEEP_ID>                 # run in one or more terminals
+
+program: train.py
+method: bayes
+
+metric:
+  goal: maximize
+  name: val_acc
+
+parameters:
+  dataset:
+    value: fashion_mnist
+
+  epochs:
+    value: 15
+
+  batch_size:
+    values: [32, 64, 128]
+
+  loss:
+    values: [cross_entropy, mse]
+
+  optimizer:
+    values: [sgd, momentum, nag, rmsprop]
+
+  learning_rate:
+    distribution: log_uniform_values
+    min: 0.0001
+    max: 0.01
+
+  weight_decay:
+    values: [0.0, 0.0005, 0.001]
+
+  num_layers:
+    values: [2, 3, 4, 5]
+
+  hidden_size:
+    values: [64, 128]
+
+  activation:
+    values: [sigmoid, tanh, relu]
+
+  weight_init:
+    values: [random, xavier]

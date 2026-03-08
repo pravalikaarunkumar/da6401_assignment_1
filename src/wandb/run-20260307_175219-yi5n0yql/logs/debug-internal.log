@@ -1,0 +1,17 @@
+{"time":"2026-03-07T17:52:23.1587975+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T17:52:23.6932595+05:30","level":"INFO","msg":"stream: created new stream","id":"yi5n0yql"}
+{"time":"2026-03-07T17:52:23.6937881+05:30","level":"INFO","msg":"handler: started","stream_id":"yi5n0yql"}
+{"time":"2026-03-07T17:52:23.6965798+05:30","level":"INFO","msg":"stream: started","id":"yi5n0yql"}
+{"time":"2026-03-07T17:52:23.6965798+05:30","level":"INFO","msg":"writer: started","stream_id":"yi5n0yql"}
+{"time":"2026-03-07T17:52:23.6965798+05:30","level":"INFO","msg":"sender: started","stream_id":"yi5n0yql"}
+{"time":"2026-03-07T17:53:04.0293615+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ns26z122pravalika-indian-institute-of-technology-madras/da6401_assignment_1_ns26z122-src/yi5n0yql/file_stream\": read tcp 192.168.0.103:64601->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2026-03-07T17:59:48.0701743+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":234299}
+{"time":"2026-03-07T17:59:48.0701743+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T17:59:48.0748335+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":234332}
+{"time":"2026-03-07T17:59:48.0756825+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":63}
+{"time":"2026-03-07T18:01:46.5952382+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T18:01:46.934616+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T18:01:47.0923324+05:30","level":"INFO","msg":"stream: closing","id":"yi5n0yql"}
+{"time":"2026-03-07T18:01:47.0940269+05:30","level":"INFO","msg":"handler: closed","stream_id":"yi5n0yql"}
+{"time":"2026-03-07T18:01:47.0951148+05:30","level":"INFO","msg":"sender: closed","stream_id":"yi5n0yql"}
+{"time":"2026-03-07T18:01:47.0956457+05:30","level":"INFO","msg":"stream: closed","id":"yi5n0yql"}

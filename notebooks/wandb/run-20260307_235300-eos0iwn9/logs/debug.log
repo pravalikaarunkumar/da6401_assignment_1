@@ -1,0 +1,23 @@
+2026-03-07 23:53:00,935 INFO    MainThread:7380 [wandb_init.py:setup_run_log_directory():717] Logging user logs to c:\Users\Pravalika Arunkumar\Documents\da6401_assignment_1_ns26z122\notebooks\wandb\run-20260307_235300-eos0iwn9\logs\debug.log
+2026-03-07 23:53:00,936 INFO    MainThread:7380 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to c:\Users\Pravalika Arunkumar\Documents\da6401_assignment_1_ns26z122\notebooks\wandb\run-20260307_235300-eos0iwn9\logs\debug-internal.log
+2026-03-07 23:53:00,940 INFO    MainThread:7380 [wandb_init.py:init():844] calling init triggers
+2026-03-07 23:53:00,941 INFO    MainThread:7380 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'init': 'zeros', '_wandb': {}}
+2026-03-07 23:53:02,662 INFO    MainThread:7380 [wandb_init.py:init():892] starting backend
+2026-03-07 23:53:02,662 INFO    MainThread:7380 [wandb_init.py:init():895] sending inform_init request
+2026-03-07 23:53:02,686 INFO    MainThread:7380 [wandb_init.py:init():903] backend started and connected
+2026-03-07 23:53:02,822 INFO    MainThread:7380 [wandb_run.py:_label_probe_notebook():1333] probe notebook
+2026-03-07 23:53:02,866 INFO    MainThread:7380 [wandb_run.py:_label_probe_notebook():1343] Unable to probe notebook: 'charmap' codec can't decode byte 0x81 in position 775355: character maps to <undefined>
+2026-03-07 23:53:02,870 INFO    MainThread:7380 [wandb_init.py:init():973] updated telemetry
+2026-03-07 23:53:03,000 INFO    MainThread:7380 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-07 23:53:03,618 INFO    MainThread:7380 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-07 23:53:05,332 INFO    MainThread:7380 [wandb_run.py:_console_start():2524] atexit reg
+2026-03-07 23:53:05,332 INFO    MainThread:7380 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-03-07 23:53:05,333 INFO    MainThread:7380 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-03-07 23:53:05,333 INFO    MainThread:7380 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-03-07 23:53:05,336 INFO    MainThread:7380 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-07 23:53:05,869 INFO    MainThread:7380 [wandb_run.py:_finish():2291] finishing run ns26z122pravalika-indian-institute-of-technology-madras/da6401_assignment1/eos0iwn9
+2026-03-07 23:53:05,870 INFO    MainThread:7380 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-03-07 23:53:05,871 INFO    MainThread:7380 [wandb_run.py:_restore():2472] restore
+2026-03-07 23:53:05,871 INFO    MainThread:7380 [wandb_run.py:_restore():2478] restore done
+2026-03-07 23:53:07,311 INFO    MainThread:7380 [wandb_run.py:_footer_sync_info():3868] logging synced files

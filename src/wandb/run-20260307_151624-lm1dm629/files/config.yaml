@@ -1,0 +1,104 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            2j6rsafgefh6qmilcvu7x0ff3gogliif:
+                args:
+                    - -d
+                    - mnist
+                    - -e
+                    - "3"
+                    - -b
+                    - "64"
+                    - -o
+                    - rmsprop
+                    - -lr
+                    - "0.001"
+                    - -nhl
+                    - "3"
+                    - -sz
+                    - "128"
+                    - -a
+                    - relu
+                    - -w_i
+                    - xavier
+                    - -l
+                    - cross_entropy
+                    - -w_p
+                    - da6401_assignment1
+                codePath: src\train.py
+                codePathLocal: train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "244354904064"
+                        used: "198577614848"
+                email: ns26z122@smail.iitm.ac.in
+                executable: C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\python.exe
+                git:
+                    commit: 671b6914588cc2eaaa0e82e93c7f132e34a2b5a6
+                    remote: https://github.com/pravalikaarunkumar/da6401_assignment_1.git
+                host: PravalikaLap
+                memory:
+                    total: "8299257856"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\Pravalika Arunkumar\Documents\da6401_assignment_1_ns26z122\src\train.py
+                python: CPython 3.11.7
+                root: C:\Users\Pravalika Arunkumar\Documents\da6401_assignment_1_ns26z122\src
+                startedAt: "2026-03-07T09:46:24.443148Z"
+                writerId: 2j6rsafgefh6qmilcvu7x0ff3gogliif
+        m: []
+        python_version: 3.11.7
+        t:
+            "1":
+                - 5
+                - 53
+                - 105
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+                - 105
+            "3":
+                - 2
+                - 13
+                - 16
+                - 62
+            "4": 3.11.7
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+activation:
+    value: relu
+batch_size:
+    value: 64
+dataset:
+    value: mnist
+epochs:
+    value: 3
+hidden_layers:
+    value: null
+hidden_size:
+    value: 128
+learning_rate:
+    value: 0.001
+loss:
+    value: cross_entropy
+model_path:
+    value: best_model.npy
+model_save_path:
+    value: best_model.npy
+num_layers:
+    value: 3
+optimizer:
+    value: rmsprop
+wandb_project:
+    value: da6401_assignment1
+weight_decay:
+    value: 0.0005
+weight_init:
+    value: xavier

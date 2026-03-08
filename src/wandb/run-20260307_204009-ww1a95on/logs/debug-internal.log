@@ -1,0 +1,20 @@
+{"time":"2026-03-07T20:40:13.6313322+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T20:40:14.1939045+05:30","level":"INFO","msg":"stream: created new stream","id":"ww1a95on"}
+{"time":"2026-03-07T20:40:14.1961667+05:30","level":"INFO","msg":"handler: started","stream_id":"ww1a95on"}
+{"time":"2026-03-07T20:40:14.2005395+05:30","level":"INFO","msg":"stream: started","id":"ww1a95on"}
+{"time":"2026-03-07T20:40:14.2005395+05:30","level":"INFO","msg":"writer: started","stream_id":"ww1a95on"}
+{"time":"2026-03-07T20:40:14.2005395+05:30","level":"INFO","msg":"sender: started","stream_id":"ww1a95on"}
+{"time":"2026-03-07T20:41:12.5250727+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T20:41:12.5256338+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":13451}
+{"time":"2026-03-07T20:41:45.919775+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":27245}
+{"time":"2026-03-07T20:41:45.9232483+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":94}
+{"time":"2026-03-07T20:42:37.2884541+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":48613}
+{"time":"2026-03-07T20:42:37.295713+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":123}
+{"time":"2026-03-07T20:44:51.8568004+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":119009}
+{"time":"2026-03-07T20:44:51.8595544+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":194}
+{"time":"2026-03-07T20:46:08.0064325+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T20:46:08.3679871+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T20:46:08.4397984+05:30","level":"INFO","msg":"stream: closing","id":"ww1a95on"}
+{"time":"2026-03-07T20:46:08.440309+05:30","level":"INFO","msg":"handler: closed","stream_id":"ww1a95on"}
+{"time":"2026-03-07T20:46:08.4424713+05:30","level":"INFO","msg":"sender: closed","stream_id":"ww1a95on"}
+{"time":"2026-03-07T20:46:08.4424713+05:30","level":"INFO","msg":"stream: closed","id":"ww1a95on"}

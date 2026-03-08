@@ -1,0 +1,25 @@
+{"time":"2026-03-07T15:00:22.2279798+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T15:00:22.6449517+05:30","level":"INFO","msg":"stream: created new stream","id":"09zvgfwn"}
+{"time":"2026-03-07T15:00:22.6449517+05:30","level":"INFO","msg":"handler: started","stream_id":"09zvgfwn"}
+{"time":"2026-03-07T15:00:22.6479491+05:30","level":"INFO","msg":"stream: started","id":"09zvgfwn"}
+{"time":"2026-03-07T15:00:22.6479491+05:30","level":"INFO","msg":"sender: started","stream_id":"09zvgfwn"}
+{"time":"2026-03-07T15:00:22.6479491+05:30","level":"INFO","msg":"writer: started","stream_id":"09zvgfwn"}
+{"time":"2026-03-07T15:04:23.0437331+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:04:38.0436546+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:04:53.0432531+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:05:08.0435592+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:05:23.0433931+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:05:38.0441702+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:05:53.0434988+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:07:38.0435015+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:07:53.0433565+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:08:08.0438004+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:08:23.0435708+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:13:22.5266687+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:13:23.0489777+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:13:38.0436337+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:13:47.6770183+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ns26z122pravalika-indian-institute-of-technology-madras/da6401_assignment_1-src/09zvgfwn/file_stream\": read tcp 192.168.0.103:60030->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2026-03-07T15:13:53.0442621+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:14:08.0430239+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:14:23.043577+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}
+{"time":"2026-03-07T15:14:38.0433434+05:30","level":"ERROR","msg":"monitor: error sampling metrics: process does not exist"}

@@ -1,0 +1,20 @@
+{
+  "dataset": "fashion_mnist",
+  "epochs": 20,
+  "batch_size": 32,
+  "learning_rate": 0.00045024653096303305,
+  "weight_decay": 0.0,
+  "loss": "cross_entropy",
+  "optimizer": "rmsprop",
+  "num_layers": 3,
+  "hidden_size": [
+    128,
+    128,
+    128
+  ],
+  "activation": "tanh",
+  "weight_init": "xavier",
+  "wandb_project": "da6401_assignment1",
+  "model_save_path": "best_model.npy",
+  "model_path": "best_model.npy"
+}

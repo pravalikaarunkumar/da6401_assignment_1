@@ -1,0 +1,20 @@
+{"time":"2026-03-07T16:22:09.7977903+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T16:22:10.5272886+05:30","level":"INFO","msg":"stream: created new stream","id":"hxgwpa1y"}
+{"time":"2026-03-07T16:22:10.5282365+05:30","level":"INFO","msg":"handler: started","stream_id":"hxgwpa1y"}
+{"time":"2026-03-07T16:22:10.5346347+05:30","level":"INFO","msg":"sender: started","stream_id":"hxgwpa1y"}
+{"time":"2026-03-07T16:22:10.5346347+05:30","level":"INFO","msg":"writer: started","stream_id":"hxgwpa1y"}
+{"time":"2026-03-07T16:22:10.5346347+05:30","level":"INFO","msg":"stream: started","id":"hxgwpa1y"}
+{"time":"2026-03-07T16:25:34.9997437+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":58926}
+{"time":"2026-03-07T16:25:35.0003522+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T16:25:35.0393855+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":58959}
+{"time":"2026-03-07T16:25:35.0401413+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":43}
+{"time":"2026-03-07T16:30:26.7410619+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T16:30:26.7420841+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":191261}
+{"time":"2026-03-07T16:30:26.7481461+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":191294}
+{"time":"2026-03-07T16:30:26.7534441+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":72}
+{"time":"2026-03-07T16:35:38.9922928+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T16:35:39.4478037+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T16:35:39.58189+05:30","level":"INFO","msg":"stream: closing","id":"hxgwpa1y"}
+{"time":"2026-03-07T16:35:39.5825123+05:30","level":"INFO","msg":"handler: closed","stream_id":"hxgwpa1y"}
+{"time":"2026-03-07T16:35:39.5841034+05:30","level":"INFO","msg":"sender: closed","stream_id":"hxgwpa1y"}
+{"time":"2026-03-07T16:35:39.5841034+05:30","level":"INFO","msg":"stream: closed","id":"hxgwpa1y"}

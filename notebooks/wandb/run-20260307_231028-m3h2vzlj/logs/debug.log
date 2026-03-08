@@ -1,0 +1,30 @@
+2026-03-07 23:10:28,269 INFO    MainThread:7380 [wandb_init.py:setup_run_log_directory():717] Logging user logs to c:\Users\Pravalika Arunkumar\Documents\da6401_assignment_1_ns26z122\notebooks\wandb\run-20260307_231028-m3h2vzlj\logs\debug.log
+2026-03-07 23:10:28,270 INFO    MainThread:7380 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to c:\Users\Pravalika Arunkumar\Documents\da6401_assignment_1_ns26z122\notebooks\wandb\run-20260307_231028-m3h2vzlj\logs\debug-internal.log
+2026-03-07 23:10:28,270 INFO    MainThread:7380 [wandb_init.py:monkeypatch_ipython():636] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000019EAFFCB190>
+2026-03-07 23:10:28,271 INFO    MainThread:7380 [wandb_init.py:init():844] calling init triggers
+2026-03-07 23:10:28,271 INFO    MainThread:7380 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'init': 'zeros', '_wandb': {}}
+2026-03-07 23:10:28,271 INFO    MainThread:7380 [wandb_init.py:init():892] starting backend
+2026-03-07 23:10:28,271 INFO    MainThread:7380 [wandb_init.py:init():895] sending inform_init request
+2026-03-07 23:10:28,283 INFO    MainThread:7380 [wandb_init.py:init():903] backend started and connected
+2026-03-07 23:10:28,304 INFO    MainThread:7380 [wandb_run.py:_label_probe_notebook():1333] probe notebook
+2026-03-07 23:10:28,399 INFO    MainThread:7380 [wandb_run.py:_label_probe_notebook():1343] Unable to probe notebook: 'charmap' codec can't decode byte 0x81 in position 775355: character maps to <undefined>
+2026-03-07 23:10:28,405 INFO    MainThread:7380 [wandb_init.py:init():973] updated telemetry
+2026-03-07 23:10:28,596 INFO    MainThread:7380 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-07 23:10:29,335 INFO    MainThread:7380 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-07 23:10:30,284 INFO    MainThread:7380 [wandb_run.py:_console_start():2524] atexit reg
+2026-03-07 23:10:30,285 INFO    MainThread:7380 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-03-07 23:10:30,285 INFO    MainThread:7380 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-03-07 23:10:30,285 INFO    MainThread:7380 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-03-07 23:10:30,294 INFO    MainThread:7380 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-07 23:10:31,370 INFO    MainThread:7380 [wandb_init.py:_post_run_cell_hook():606] [no run ID] resuming backend
+2026-03-07 23:52:59,115 INFO    MainThread:7380 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-03-07 23:52:59,130 INFO    MainThread:7380 [wandb_init.py:_pre_run_cell_hook():595] [no run ID] pausing backend
+2026-03-07 23:53:00,978 INFO    MainThread:7380 [wandb_run.py:_finish():2291] finishing run ns26z122pravalika-indian-institute-of-technology-madras/da6401_assignment1/m3h2vzlj
+2026-03-07 23:53:00,989 INFO    MainThread:7380 [jupyter.py:save_history():435] not saving jupyter history
+2026-03-07 23:53:00,989 INFO    MainThread:7380 [jupyter.py:save_ipynb():362] not saving jupyter notebook
+2026-03-07 23:53:00,989 INFO    MainThread:7380 [wandb_init.py:_jupyter_teardown():621] cleaning up jupyter logic
+2026-03-07 23:53:00,991 INFO    MainThread:7380 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-03-07 23:53:00,998 INFO    MainThread:7380 [wandb_run.py:_restore():2472] restore
+2026-03-07 23:53:01,002 INFO    MainThread:7380 [wandb_run.py:_restore():2478] restore done
+2026-03-07 23:53:02,648 INFO    MainThread:7380 [wandb_run.py:_footer_sync_info():3868] logging synced files

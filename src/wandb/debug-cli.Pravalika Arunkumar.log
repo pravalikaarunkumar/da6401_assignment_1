@@ -1,0 +1,2828 @@
+2026-03-07 14:56:56 INFO Running runs: []
+2026-03-07 14:56:56 INFO Agent received command: run
+2026-03-07 14:56:56 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.008390499965269362
+	loss: mse
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 14:56:56 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.008390499965269362 --loss=mse --num_layers=3 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 14:57:01 INFO Running runs: ['k3jqjsdp']
+2026-03-07 14:59:33 ERROR Error executing GraphQL.
+Traceback (most recent call last):
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 394, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 71, in execute
+    request.raise_for_status()
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+2026-03-07 14:59:34 ERROR Traceback (most recent call last):
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\retry.py", line 160, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 394, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 71, in execute
+    request.raise_for_status()
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\cli\cli.py", line 149, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\cli\cli.py", line 1765, in agent
+    wandb_agent.agent(
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\wandb_agent.py", line 669, in agent
+    return run_agent(
+           ^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\wandb_agent.py", line 622, in run_agent
+    agent.run()
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\wandb_agent.py", line 288, in run
+    agent = self._api.register_agent(socket.gethostname(), sweep_id=self._sweep_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\apis\internal.py", line 149, in register_agent
+    return self.api.register_agent(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\apis\normalize.py", line 28, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 3111, in register_agent
+    response = self.gql(
+               ^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 364, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\retry.py", line 163, in __call__
+    if not retry_loop.should_retry(e):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\retry.py", line 280, in should_retry
+    retry_check_result = self._retry_check(exception)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\util.py", line 902, in no_retry_4xx
+    raise UsageError(body["errors"][0]["message"])
+wandb.errors.errors.UsageError: Sweep ns26z122pravalika-indian-institute-of-technology-madras/da6401_assignment_1-src/t5ukityq is not running
+Traceback (most recent call last):
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\retry.py", line 160, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 394, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 71, in execute
+    request.raise_for_status()
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\cli\cli.py", line 149, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\cli\cli.py", line 1765, in agent
+    wandb_agent.agent(
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\wandb_agent.py", line 669, in agent
+    return run_agent(
+           ^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\wandb_agent.py", line 622, in run_agent
+    agent.run()
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\wandb_agent.py", line 288, in run
+    agent = self._api.register_agent(socket.gethostname(), sweep_id=self._sweep_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\apis\internal.py", line 149, in register_agent
+    return self.api.register_agent(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\apis\normalize.py", line 28, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 3111, in register_agent
+    response = self.gql(
+               ^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 364, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\retry.py", line 163, in __call__
+    if not retry_loop.should_retry(e):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\retry.py", line 280, in should_retry
+    retry_check_result = self._retry_check(exception)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\util.py", line 902, in no_retry_4xx
+    raise UsageError(body["errors"][0]["message"])
+wandb.errors.errors.UsageError: Sweep ns26z122pravalika-indian-institute-of-technology-madras/da6401_assignment_1-src/t5ukityq is not running
+2026-03-07 15:00:13 INFO Cleaning up finished run: k3jqjsdp
+2026-03-07 15:00:15 INFO Agent received command: run
+2026-03-07 15:00:15 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00025184313828592245
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: sgd
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 15:00:15 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00025184313828592245 --loss=cross_entropy --num_layers=4 --optimizer=sgd --weight_decay=0.001 --weight_init=xavier
+2026-03-07 15:00:20 INFO Running runs: ['09zvgfwn']
+2026-03-07 15:20:33 INFO Running runs: []
+2026-03-07 15:20:34 INFO Agent received command: run
+2026-03-07 15:20:34 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0006681380350189033
+	loss: mse
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 15:20:34 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0006681380350189033 --loss=mse --num_layers=3 --optimizer=rmsprop --weight_decay=0.001 --weight_init=xavier
+2026-03-07 15:20:40 INFO Running runs: ['zr0cl4s6']
+2026-03-07 15:21:20 INFO Running runs: []
+2026-03-07 15:21:21 INFO Agent received command: run
+2026-03-07 15:21:21 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00010351010417219166
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: random
+2026-03-07 15:21:21 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00010351010417219166 --loss=cross_entropy --num_layers=3 --optimizer=momentum --weight_decay=0 --weight_init=random
+2026-03-07 15:21:26 INFO Running runs: ['ijsf3fg2']
+2026-03-07 15:22:32 INFO Running runs: []
+2026-03-07 15:22:33 INFO Cleaning up finished run: zr0cl4s6
+2026-03-07 15:22:33 INFO Agent received command: run
+2026-03-07 15:22:33 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0017279938010011625
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: sgd
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 15:22:33 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0017279938010011625 --loss=cross_entropy --num_layers=5 --optimizer=sgd --weight_decay=0.001 --weight_init=xavier
+2026-03-07 15:22:34 INFO Agent received command: run
+2026-03-07 15:22:34 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00026642187202856397
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 15:22:34 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00026642187202856397 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=random
+2026-03-07 15:22:38 INFO Running runs: ['xmentkwa']
+2026-03-07 15:22:39 INFO Running runs: ['s2fr76pl']
+2026-03-07 15:22:42 INFO Running runs: []
+2026-03-07 15:22:43 INFO Agent received command: run
+2026-03-07 15:22:43 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0049622552837292255
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 15:22:43 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0049622552837292255 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 15:22:48 INFO Running runs: ['sp3p1ueu']
+2026-03-07 15:22:59 INFO Running runs: []
+2026-03-07 15:23:01 INFO Agent received command: run
+2026-03-07 15:23:01 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0007932631501338172
+	loss: mse
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 15:23:01 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0007932631501338172 --loss=mse --num_layers=5 --optimizer=momentum --weight_decay=0.001 --weight_init=xavier
+2026-03-07 15:23:06 INFO Running runs: ['h874d1ly']
+2026-03-07 15:28:08 INFO Cleaning up finished run: sp3p1ueu
+2026-03-07 15:28:09 INFO Agent received command: run
+2026-03-07 15:28:09 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0018479367255645064
+	loss: mse
+	num_layers: 5
+	optimizer: sgd
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 15:28:09 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0018479367255645064 --loss=mse --num_layers=5 --optimizer=sgd --weight_decay=0.0005 --weight_init=random
+2026-03-07 15:28:14 INFO Running runs: ['6mpt5jph']
+2026-03-07 15:29:56 INFO Cleaning up finished run: s2fr76pl
+2026-03-07 15:29:57 INFO Agent received command: run
+2026-03-07 15:29:57 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0004117012661205671
+	loss: mse
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 15:29:57 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0004117012661205671 --loss=mse --num_layers=2 --optimizer=nag --weight_decay=0 --weight_init=xavier
+2026-03-07 15:30:02 INFO Running runs: ['her5sizb']
+2026-03-07 15:30:50 INFO Cleaning up finished run: h874d1ly
+2026-03-07 15:30:51 INFO Agent received command: run
+2026-03-07 15:30:51 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.009065494807726103
+	loss: mse
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 15:30:51 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.009065494807726103 --loss=mse --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 15:30:56 INFO Running runs: ['snbtp89c']
+2026-03-07 15:32:59 INFO Cleaning up finished run: ijsf3fg2
+2026-03-07 15:33:01 INFO Agent received command: run
+2026-03-07 15:33:01 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0034106092844452176
+	loss: mse
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 15:33:01 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0034106092844452176 --loss=mse --num_layers=3 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 15:33:06 INFO Running runs: ['zuy7i0o3']
+2026-03-07 15:35:54 INFO Cleaning up finished run: her5sizb
+2026-03-07 15:35:55 INFO Agent received command: run
+2026-03-07 15:35:55 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0014494281457325029
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 15:35:55 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0014494281457325029 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 15:36:00 INFO Running runs: ['dvoaoq9h']
+2026-03-07 15:36:53 INFO Cleaning up finished run: snbtp89c
+2026-03-07 15:36:53 INFO Agent received command: run
+2026-03-07 15:36:53 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0006355805358363715
+	loss: mse
+	num_layers: 3
+	optimizer: sgd
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 15:36:53 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0006355805358363715 --loss=mse --num_layers=3 --optimizer=sgd --weight_decay=0.001 --weight_init=random
+2026-03-07 15:36:59 INFO Running runs: ['lte8phi4']
+2026-03-07 15:39:29 INFO Cleaning up finished run: zuy7i0o3
+2026-03-07 15:39:30 INFO Agent received command: run
+2026-03-07 15:39:30 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0014877880619696502
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 15:39:30 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0014877880619696502 --loss=cross_entropy --num_layers=3 --optimizer=momentum --weight_decay=0.001 --weight_init=random
+2026-03-07 15:39:35 INFO Running runs: ['sc2ddppz']
+2026-03-07 15:39:46 INFO Cleaning up finished run: 6mpt5jph
+2026-03-07 15:39:47 INFO Agent received command: run
+2026-03-07 15:39:47 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00018204309332006384
+	loss: mse
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 15:39:47 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00018204309332006384 --loss=mse --num_layers=3 --optimizer=nag --weight_decay=0.0005 --weight_init=random
+2026-03-07 15:39:52 INFO Running runs: ['8kjbndoq']
+2026-03-07 15:42:12 INFO Cleaning up finished run: lte8phi4
+2026-03-07 15:42:13 INFO Agent received command: run
+2026-03-07 15:42:13 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00031487785065304554
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 15:42:13 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00031487785065304554 --loss=cross_entropy --num_layers=3 --optimizer=momentum --weight_decay=0.001 --weight_init=random
+2026-03-07 15:42:18 INFO Running runs: ['l02skcll']
+2026-03-07 15:43:00 INFO Cleaning up finished run: dvoaoq9h
+2026-03-07 15:43:02 INFO Agent received command: run
+2026-03-07 15:43:02 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0006966840795721746
+	loss: mse
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 15:43:02 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0006966840795721746 --loss=mse --num_layers=3 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 15:43:07 INFO Running runs: ['sm80oepe']
+2026-03-07 15:43:24 INFO Cleaning up finished run: xmentkwa
+2026-03-07 15:43:25 INFO Agent received command: run
+2026-03-07 15:43:25 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.001403690534011419
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 15:43:25 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.001403690534011419 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 15:43:30 INFO Running runs: ['jzuddmxm']
+2026-03-07 15:46:25 INFO Cleaning up finished run: 8kjbndoq
+2026-03-07 15:46:26 INFO Agent received command: run
+2026-03-07 15:46:26 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0008376047912316638
+	loss: mse
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 15:46:26 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0008376047912316638 --loss=mse --num_layers=2 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 15:46:31 INFO Running runs: ['p3zd5p74']
+2026-03-07 15:48:43 INFO Cleaning up finished run: jzuddmxm
+2026-03-07 15:48:44 INFO Agent received command: run
+2026-03-07 15:48:44 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0019749257973177147
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 15:48:44 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0019749257973177147 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 15:48:49 INFO Running runs: ['v6wg6iqk']
+2026-03-07 15:49:18 INFO Cleaning up finished run: sm80oepe
+2026-03-07 15:49:19 INFO Agent received command: run
+2026-03-07 15:49:19 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0029722530015017182
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 15:49:19 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0029722530015017182 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 15:49:24 INFO Running runs: ['mr2pu5xg']
+2026-03-07 15:51:15 INFO Cleaning up finished run: sc2ddppz
+2026-03-07 15:51:16 INFO Agent received command: run
+2026-03-07 15:51:17 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0012544105612670407
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 15:51:17 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0012544105612670407 --loss=cross_entropy --num_layers=3 --optimizer=nag --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 15:51:22 INFO Running runs: ['6l69lwxg']
+2026-03-07 15:53:14 INFO Cleaning up finished run: p3zd5p74
+2026-03-07 15:53:15 INFO Agent received command: run
+2026-03-07 15:53:15 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0029708416858675556
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 15:53:15 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0029708416858675556 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0 --weight_init=xavier
+2026-03-07 15:53:20 INFO Running runs: ['1ktdy31d']
+2026-03-07 15:54:25 INFO Cleaning up finished run: l02skcll
+2026-03-07 15:54:26 INFO Agent received command: run
+2026-03-07 15:54:26 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0017232385824386008
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 15:54:26 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0017232385824386008 --loss=cross_entropy --num_layers=2 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 15:54:31 INFO Running runs: ['dndkynpr']
+2026-03-07 15:55:12 INFO Cleaning up finished run: v6wg6iqk
+2026-03-07 15:55:13 INFO Agent received command: run
+2026-03-07 15:55:13 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0027935584703597
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 15:55:13 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0027935584703597 --loss=cross_entropy --num_layers=4 --optimizer=rmsprop --weight_decay=0.001 --weight_init=xavier
+2026-03-07 15:55:18 INFO Running runs: ['prgaeiv0']
+2026-03-07 15:56:34 INFO Cleaning up finished run: mr2pu5xg
+2026-03-07 15:56:35 INFO Agent received command: run
+2026-03-07 15:56:35 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.004279897385373389
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 15:56:35 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.004279897385373389 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 15:56:41 INFO Running runs: ['l679cra4']
+2026-03-07 16:00:13 INFO Cleaning up finished run: 6l69lwxg
+2026-03-07 16:00:15 INFO Agent received command: run
+2026-03-07 16:00:15 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0023903873663038205
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 16:00:15 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0023903873663038205 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 16:00:20 INFO Running runs: ['xlti30mn']
+2026-03-07 16:00:42 INFO Cleaning up finished run: 1ktdy31d
+2026-03-07 16:00:43 INFO Agent received command: run
+2026-03-07 16:00:43 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0056861550505377355
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 16:00:43 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0056861550505377355 --loss=cross_entropy --num_layers=2 --optimizer=momentum --weight_decay=0 --weight_init=xavier
+2026-03-07 16:00:48 INFO Running runs: ['99aht12x']
+2026-03-07 16:04:02 INFO Cleaning up finished run: l679cra4
+2026-03-07 16:04:03 INFO Agent received command: run
+2026-03-07 16:04:03 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.004828742137915539
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 16:04:03 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.004828742137915539 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0.001 --weight_init=xavier
+2026-03-07 16:04:08 INFO Running runs: ['yya4a1uc']
+2026-03-07 16:04:21 INFO Cleaning up finished run: dndkynpr
+2026-03-07 16:04:22 INFO Agent received command: run
+2026-03-07 16:04:22 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00182177199094796
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 16:04:22 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00182177199094796 --loss=cross_entropy --num_layers=3 --optimizer=nag --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 16:04:27 INFO Running runs: ['gc7w9xpb']
+2026-03-07 16:04:41 INFO Cleaning up finished run: 99aht12x
+2026-03-07 16:04:42 INFO Agent received command: run
+2026-03-07 16:04:42 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.003763889639311016
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: sgd
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 16:04:42 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.003763889639311016 --loss=cross_entropy --num_layers=3 --optimizer=sgd --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 16:04:47 INFO Running runs: ['h5rqtfoc']
+2026-03-07 16:05:24 INFO Cleaning up finished run: prgaeiv0
+2026-03-07 16:05:25 INFO Agent received command: run
+2026-03-07 16:05:25 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0022513684194149985
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 16:05:25 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0022513684194149985 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 16:05:28 INFO Cleaning up finished run: xlti30mn
+2026-03-07 16:05:29 INFO Agent received command: run
+2026-03-07 16:05:29 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.003954616439691679
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 16:05:29 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.003954616439691679 --loss=cross_entropy --num_layers=2 --optimizer=momentum --weight_decay=0 --weight_init=xavier
+2026-03-07 16:05:30 INFO Running runs: ['k1qcvzts']
+2026-03-07 16:05:34 INFO Running runs: ['unk769i0']
+2026-03-07 16:11:52 INFO Cleaning up finished run: h5rqtfoc
+2026-03-07 16:11:53 INFO Agent received command: run
+2026-03-07 16:11:53 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.002122887677063219
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 16:11:53 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.002122887677063219 --loss=cross_entropy --num_layers=2 --optimizer=momentum --weight_decay=0 --weight_init=xavier
+2026-03-07 16:11:58 INFO Running runs: ['t03jyg87']
+2026-03-07 16:15:19 INFO Cleaning up finished run: k1qcvzts
+2026-03-07 16:15:20 INFO Agent received command: run
+2026-03-07 16:15:20 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.003331564023577572
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 16:15:20 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.003331564023577572 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 16:15:23 INFO Cleaning up finished run: unk769i0
+2026-03-07 16:15:25 INFO Agent received command: run
+2026-03-07 16:15:25 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.003012621152491129
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 16:15:25 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.003012621152491129 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 16:15:25 INFO Running runs: ['7el4w7pk']
+2026-03-07 16:15:30 INFO Running runs: ['w8vuty2r']
+2026-03-07 16:21:48 INFO Cleaning up finished run: yya4a1uc
+2026-03-07 16:21:49 INFO Agent received command: run
+2026-03-07 16:21:49 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0040342723982888205
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 16:21:49 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0040342723982888205 --loss=cross_entropy --num_layers=2 --optimizer=momentum --weight_decay=0 --weight_init=xavier
+2026-03-07 16:21:54 INFO Running runs: ['hxgwpa1y']
+2026-03-07 16:23:04 INFO Cleaning up finished run: t03jyg87
+2026-03-07 16:23:05 INFO Agent received command: run
+2026-03-07 16:23:05 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0023537066999342548
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 16:23:05 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0023537066999342548 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 16:23:10 INFO Running runs: ['b0f0tuoz']
+2026-03-07 16:26:43 INFO Cleaning up finished run: 7el4w7pk
+2026-03-07 16:26:44 INFO Agent received command: run
+2026-03-07 16:26:44 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0022488672752613813
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 16:26:44 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0022488672752613813 --loss=cross_entropy --num_layers=2 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 16:26:49 INFO Running runs: ['jedddan3']
+2026-03-07 16:28:35 INFO Cleaning up finished run: b0f0tuoz
+2026-03-07 16:28:36 INFO Agent received command: run
+2026-03-07 16:28:36 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00014219366859386429
+	loss: mse
+	num_layers: 4
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 16:28:36 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00014219366859386429 --loss=mse --num_layers=4 --optimizer=momentum --weight_decay=0.001 --weight_init=xavier
+2026-03-07 16:28:41 INFO Running runs: ['o5soaqhv']
+2026-03-07 16:32:30 INFO Cleaning up finished run: w8vuty2r
+2026-03-07 16:32:31 INFO Agent received command: run
+2026-03-07 16:32:31 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00018771106831824352
+	loss: mse
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 16:32:31 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00018771106831824352 --loss=mse --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=random
+2026-03-07 16:32:36 INFO Running runs: ['noi73gjp']
+2026-03-07 16:35:47 INFO Cleaning up finished run: hxgwpa1y
+2026-03-07 16:35:48 INFO Agent received command: run
+2026-03-07 16:35:48 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0023894163511139852
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 16:35:48 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0023894163511139852 --loss=cross_entropy --num_layers=5 --optimizer=momentum --weight_decay=0.001 --weight_init=random
+2026-03-07 16:35:53 INFO Running runs: ['sm969ms2']
+2026-03-07 16:39:15 INFO Cleaning up finished run: jedddan3
+2026-03-07 16:39:16 INFO Agent received command: run
+2026-03-07 16:39:16 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0005631761150157889
+	loss: mse
+	num_layers: 4
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 16:39:16 INFO About to run command: python train.py --activation=tanh --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0005631761150157889 --loss=mse --num_layers=4 --optimizer=momentum --weight_decay=0.001 --weight_init=random
+2026-03-07 16:39:21 INFO Running runs: ['jnei47ua']
+2026-03-07 16:39:36 INFO Cleaning up finished run: noi73gjp
+2026-03-07 16:39:37 INFO Agent received command: run
+2026-03-07 16:39:37 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0006496248548565186
+	loss: mse
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 16:39:37 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0006496248548565186 --loss=mse --num_layers=2 --optimizer=nag --weight_decay=0.001 --weight_init=random
+2026-03-07 16:39:42 INFO Running runs: ['r2b36nbw']
+2026-03-07 16:44:13 INFO Cleaning up finished run: sm969ms2
+2026-03-07 16:44:14 INFO Agent received command: run
+2026-03-07 16:44:14 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.001355638469007783
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 16:44:14 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.001355638469007783 --loss=cross_entropy --num_layers=3 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 16:44:19 INFO Running runs: ['r50nybo4']
+2026-03-07 16:44:33 INFO Cleaning up finished run: o5soaqhv
+2026-03-07 16:44:34 INFO Agent received command: run
+2026-03-07 16:44:34 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00023497605981440795
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 16:44:34 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00023497605981440795 --loss=cross_entropy --num_layers=5 --optimizer=rmsprop --weight_decay=0.001 --weight_init=xavier
+2026-03-07 16:44:39 INFO Running runs: ['3cg7rvpj']
+2026-03-07 16:47:06 INFO Cleaning up finished run: r2b36nbw
+2026-03-07 16:47:07 INFO Agent received command: run
+2026-03-07 16:47:07 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00015162138031302085
+	loss: mse
+	num_layers: 4
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 16:47:07 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00015162138031302085 --loss=mse --num_layers=4 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 16:47:12 INFO Running runs: ['d0xkccdt']
+2026-03-07 16:49:16 INFO Cleaning up finished run: jnei47ua
+2026-03-07 16:49:18 INFO Agent received command: run
+2026-03-07 16:49:18 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.008162132062445761
+	loss: mse
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 16:49:18 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.008162132062445761 --loss=mse --num_layers=3 --optimizer=rmsprop --weight_decay=0.001 --weight_init=xavier
+2026-03-07 16:49:23 INFO Running runs: ['n2lz4vf1']
+2026-03-07 16:50:57 INFO Cleaning up finished run: 3cg7rvpj
+2026-03-07 16:50:58 INFO Agent received command: run
+2026-03-07 16:50:58 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00012257160016374062
+	loss: mse
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 16:50:58 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00012257160016374062 --loss=mse --num_layers=2 --optimizer=rmsprop --weight_decay=0.001 --weight_init=random
+2026-03-07 16:51:03 INFO Running runs: ['iu924u2b']
+2026-03-07 16:53:43 INFO Cleaning up finished run: r50nybo4
+2026-03-07 16:53:44 INFO Agent received command: run
+2026-03-07 16:53:44 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00037296006164920265
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 16:53:44 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00037296006164920265 --loss=cross_entropy --num_layers=5 --optimizer=rmsprop --weight_decay=0.001 --weight_init=random
+2026-03-07 16:53:49 INFO Running runs: ['oehoq5jm']
+2026-03-07 16:54:12 INFO Cleaning up finished run: d0xkccdt
+2026-03-07 16:54:13 INFO Agent received command: run
+2026-03-07 16:54:13 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00517573845203844
+	loss: mse
+	num_layers: 5
+	optimizer: sgd
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 16:54:13 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00517573845203844 --loss=mse --num_layers=5 --optimizer=sgd --weight_decay=0 --weight_init=xavier
+2026-03-07 16:54:18 INFO Running runs: ['o67hjex6']
+2026-03-07 16:55:02 INFO Cleaning up finished run: iu924u2b
+2026-03-07 16:55:03 INFO Agent received command: run
+2026-03-07 16:55:03 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00040121683057593
+	loss: mse
+	num_layers: 4
+	optimizer: sgd
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 16:55:03 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00040121683057593 --loss=mse --num_layers=4 --optimizer=sgd --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 16:55:08 INFO Running runs: ['9mk4nf93']
+2026-03-07 17:03:27 INFO Cleaning up finished run: 9mk4nf93
+2026-03-07 17:03:28 INFO Agent received command: run
+2026-03-07 17:03:28 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0006465141910977912
+	loss: mse
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: random
+2026-03-07 17:03:28 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0006465141910977912 --loss=mse --num_layers=5 --optimizer=momentum --weight_decay=0 --weight_init=random
+2026-03-07 17:03:34 INFO Running runs: ['vt1uj3e9']
+2026-03-07 17:04:42 INFO Cleaning up finished run: n2lz4vf1
+2026-03-07 17:04:43 INFO Agent received command: run
+2026-03-07 17:04:43 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.008433606587265614
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 17:04:43 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.008433606587265614 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0.0005 --weight_init=random
+2026-03-07 17:04:48 INFO Running runs: ['j6z34324']
+2026-03-07 17:06:54 INFO Cleaning up finished run: o67hjex6
+2026-03-07 17:06:55 INFO Agent received command: run
+2026-03-07 17:06:55 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00018991563566849609
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 17:06:55 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00018991563566849609 --loss=cross_entropy --num_layers=4 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=random
+2026-03-07 17:07:00 INFO Running runs: ['v35g9m62']
+2026-03-07 17:07:48 INFO Cleaning up finished run: vt1uj3e9
+2026-03-07 17:07:49 INFO Agent received command: run
+2026-03-07 17:07:49 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00045024653096303305
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 17:07:49 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00045024653096303305 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 17:07:54 INFO Running runs: ['kcqk99p2']
+2026-03-07 17:12:24 INFO Cleaning up finished run: oehoq5jm
+2026-03-07 17:12:26 INFO Agent received command: run
+2026-03-07 17:12:26 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.003513325292636864
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 17:12:26 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.003513325292636864 --loss=cross_entropy --num_layers=4 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 17:12:31 INFO Running runs: ['403q3zx2']
+2026-03-07 17:14:48 INFO Cleaning up finished run: j6z34324
+2026-03-07 17:14:50 INFO Agent received command: run
+2026-03-07 17:14:50 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00021705088885256175
+	loss: mse
+	num_layers: 5
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 17:14:50 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00021705088885256175 --loss=mse --num_layers=5 --optimizer=rmsprop --weight_decay=0.001 --weight_init=random
+2026-03-07 17:14:55 INFO Running runs: ['7fpoqafl']
+2026-03-07 17:15:08 INFO Cleaning up finished run: v35g9m62
+2026-03-07 17:15:08 INFO Agent received command: run
+2026-03-07 17:15:08 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00018288365360582244
+	loss: mse
+	num_layers: 4
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 17:15:08 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00018288365360582244 --loss=mse --num_layers=4 --optimizer=nag --weight_decay=0.001 --weight_init=random
+2026-03-07 17:15:13 INFO Running runs: ['puat5x1x']
+2026-03-07 17:19:17 INFO Cleaning up finished run: puat5x1x
+2026-03-07 17:19:18 INFO Agent received command: run
+2026-03-07 17:19:18 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.007200983548380526
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 17:19:18 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.007200983548380526 --loss=cross_entropy --num_layers=2 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 17:19:23 INFO Running runs: ['zud2cntu']
+2026-03-07 17:21:32 INFO Cleaning up finished run: kcqk99p2
+2026-03-07 17:21:33 INFO Agent received command: run
+2026-03-07 17:21:33 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.000875267129518446
+	loss: mse
+	num_layers: 2
+	optimizer: sgd
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 17:21:33 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.000875267129518446 --loss=mse --num_layers=2 --optimizer=sgd --weight_decay=0.001 --weight_init=random
+2026-03-07 17:21:38 INFO Running runs: ['8wkpogbl']
+2026-03-07 17:23:31 INFO Cleaning up finished run: 403q3zx2
+2026-03-07 17:23:32 INFO Agent received command: run
+2026-03-07 17:23:32 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00013895501600895538
+	loss: mse
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 17:23:32 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00013895501600895538 --loss=mse --num_layers=3 --optimizer=nag --weight_decay=0.0005 --weight_init=random
+2026-03-07 17:23:37 INFO Running runs: ['oljbvpqc']
+2026-03-07 17:25:15 INFO Cleaning up finished run: zud2cntu
+2026-03-07 17:25:16 INFO Agent received command: run
+2026-03-07 17:25:16 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.006690752274907312
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0
+	weight_init: random
+2026-03-07 17:25:16 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.006690752274907312 --loss=cross_entropy --num_layers=3 --optimizer=nag --weight_decay=0 --weight_init=random
+2026-03-07 17:25:17 INFO Cleaning up finished run: 7fpoqafl
+2026-03-07 17:25:18 INFO Agent received command: run
+2026-03-07 17:25:18 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.006436060340733128
+	loss: mse
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 17:25:18 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.006436060340733128 --loss=mse --num_layers=3 --optimizer=momentum --weight_decay=0.001 --weight_init=random
+2026-03-07 17:25:21 INFO Running runs: ['a58wndfi']
+2026-03-07 17:25:23 INFO Running runs: ['n069h86v']
+2026-03-07 17:28:50 INFO Cleaning up finished run: 8wkpogbl
+2026-03-07 17:28:51 INFO Agent received command: run
+2026-03-07 17:28:51 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0005715093888990246
+	loss: mse
+	num_layers: 5
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 17:28:52 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0005715093888990246 --loss=mse --num_layers=5 --optimizer=rmsprop --weight_decay=0.001 --weight_init=xavier
+2026-03-07 17:28:57 INFO Running runs: ['1e1073dl']
+2026-03-07 17:32:55 INFO Cleaning up finished run: oljbvpqc
+2026-03-07 17:32:56 INFO Agent received command: run
+2026-03-07 17:32:56 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00011882735061898706
+	loss: mse
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 17:32:56 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00011882735061898706 --loss=mse --num_layers=2 --optimizer=momentum --weight_decay=0 --weight_init=xavier
+2026-03-07 17:33:01 INFO Running runs: ['1d8nqr2k']
+2026-03-07 17:34:26 INFO Cleaning up finished run: 1e1073dl
+2026-03-07 17:34:27 INFO Agent received command: run
+2026-03-07 17:34:27 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.002246392061788475
+	loss: mse
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 17:34:27 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.002246392061788475 --loss=mse --num_layers=3 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 17:34:28 INFO Cleaning up finished run: a58wndfi
+2026-03-07 17:34:29 INFO Agent received command: run
+2026-03-07 17:34:29 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0011969806349200764
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 17:34:29 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0011969806349200764 --loss=cross_entropy --num_layers=5 --optimizer=momentum --weight_decay=0.001 --weight_init=xavier
+2026-03-07 17:34:32 INFO Running runs: ['0b1whj5d']
+2026-03-07 17:34:35 INFO Running runs: ['nvv1l126']
+2026-03-07 17:35:03 INFO Cleaning up finished run: n069h86v
+2026-03-07 17:35:04 INFO Agent received command: run
+2026-03-07 17:35:04 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.002386725155817903
+	loss: mse
+	num_layers: 4
+	optimizer: sgd
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 17:35:04 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.002386725155817903 --loss=mse --num_layers=4 --optimizer=sgd --weight_decay=0 --weight_init=xavier
+2026-03-07 17:35:09 INFO Running runs: ['t34kfuo4']
+2026-03-07 17:35:51 INFO Cleaning up finished run: 1d8nqr2k
+2026-03-07 17:35:52 INFO Agent received command: run
+2026-03-07 17:35:52 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.002057862051640817
+	loss: mse
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: random
+2026-03-07 17:35:52 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.002057862051640817 --loss=mse --num_layers=2 --optimizer=rmsprop --weight_decay=0 --weight_init=random
+2026-03-07 17:35:57 INFO Running runs: ['34jl0lu4']
+2026-03-07 17:40:02 INFO Cleaning up finished run: 0b1whj5d
+2026-03-07 17:40:03 INFO Agent received command: run
+2026-03-07 17:40:03 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0006363989893499583
+	loss: mse
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 17:40:03 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0006363989893499583 --loss=mse --num_layers=3 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 17:40:08 INFO Running runs: ['lfuf7mph']
+2026-03-07 17:45:18 INFO Cleaning up finished run: nvv1l126
+2026-03-07 17:45:19 INFO Agent received command: run
+2026-03-07 17:45:19 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0006216495436978921
+	loss: mse
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 17:45:19 INFO About to run command: python train.py --activation=tanh --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0006216495436978921 --loss=mse --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=random
+2026-03-07 17:45:25 INFO Running runs: ['iirvyiy8']
+2026-03-07 17:45:26 INFO Cleaning up finished run: t34kfuo4
+2026-03-07 17:45:27 INFO Agent received command: run
+2026-03-07 17:45:28 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00015705709218984237
+	loss: mse
+	num_layers: 3
+	optimizer: sgd
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 17:45:28 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00015705709218984237 --loss=mse --num_layers=3 --optimizer=sgd --weight_decay=0.0005 --weight_init=random
+2026-03-07 17:45:33 INFO Running runs: ['giahj84c']
+2026-03-07 17:51:39 INFO Cleaning up finished run: 34jl0lu4
+2026-03-07 17:51:40 INFO Agent received command: run
+2026-03-07 17:51:40 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0002536783806302682
+	loss: mse
+	num_layers: 2
+	optimizer: sgd
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 17:51:40 INFO About to run command: python train.py --activation=tanh --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0002536783806302682 --loss=mse --num_layers=2 --optimizer=sgd --weight_decay=0.001 --weight_init=xavier
+2026-03-07 17:51:45 INFO Running runs: ['msfx0xs7']
+2026-03-07 17:52:02 INFO Cleaning up finished run: giahj84c
+2026-03-07 17:52:03 INFO Agent received command: run
+2026-03-07 17:52:03 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00025909827305194974
+	loss: mse
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: random
+2026-03-07 17:52:03 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00025909827305194974 --loss=mse --num_layers=3 --optimizer=momentum --weight_decay=0 --weight_init=random
+2026-03-07 17:52:08 INFO Running runs: ['yi5n0yql']
+2026-03-07 17:56:49 INFO Cleaning up finished run: lfuf7mph
+2026-03-07 17:56:50 INFO Agent received command: run
+2026-03-07 17:56:50 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0029148427103338147
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 17:56:50 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0029148427103338147 --loss=cross_entropy --num_layers=4 --optimizer=rmsprop --weight_decay=0.001 --weight_init=xavier
+2026-03-07 17:56:51 INFO Cleaning up finished run: iirvyiy8
+2026-03-07 17:56:52 INFO Agent received command: run
+2026-03-07 17:56:52 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.008420548828769267
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 17:56:52 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.008420548828769267 --loss=cross_entropy --num_layers=3 --optimizer=momentum --weight_decay=0.001 --weight_init=xavier
+2026-03-07 17:56:55 INFO Running runs: ['ifyq0vly']
+2026-03-07 17:56:57 INFO Running runs: ['oz1klbma']
+2026-03-07 17:59:48 INFO Cleaning up finished run: msfx0xs7
+2026-03-07 17:59:49 INFO Agent received command: run
+2026-03-07 17:59:49 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0033429483900358843
+	loss: mse
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: random
+2026-03-07 17:59:49 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0033429483900358843 --loss=mse --num_layers=3 --optimizer=momentum --weight_decay=0 --weight_init=random
+2026-03-07 17:59:55 INFO Running runs: ['i3lxnyp3']
+2026-03-07 18:01:58 INFO Cleaning up finished run: yi5n0yql
+2026-03-07 18:01:59 INFO Agent received command: run
+2026-03-07 18:01:59 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0014776439731920994
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 18:01:59 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0014776439731920994 --loss=cross_entropy --num_layers=5 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 18:02:04 INFO Running runs: ['p0314eqb']
+2026-03-07 18:03:43 INFO Cleaning up finished run: i3lxnyp3
+2026-03-07 18:03:45 INFO Agent received command: run
+2026-03-07 18:03:45 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0001538174150179838
+	loss: mse
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 18:03:45 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0001538174150179838 --loss=mse --num_layers=2 --optimizer=rmsprop --weight_decay=0.001 --weight_init=xavier
+2026-03-07 18:03:50 INFO Running runs: ['8rkwco6y']
+2026-03-07 18:04:05 INFO Cleaning up finished run: ifyq0vly
+2026-03-07 18:04:06 INFO Agent received command: run
+2026-03-07 18:04:06 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0007322489145658262
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 18:04:06 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0007322489145658262 --loss=cross_entropy --num_layers=3 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 18:04:11 INFO Running runs: ['84lxolj5']
+2026-03-07 18:06:36 INFO Cleaning up finished run: p0314eqb
+2026-03-07 18:06:37 INFO Agent received command: run
+2026-03-07 18:06:37 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00013167672008500224
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 18:06:37 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00013167672008500224 --loss=cross_entropy --num_layers=4 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 18:06:42 INFO Running runs: ['gtdrcuec']
+2026-03-07 18:14:15 INFO Cleaning up finished run: oz1klbma
+2026-03-07 18:14:16 INFO Agent received command: run
+2026-03-07 18:14:16 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0002248871342070106
+	loss: mse
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 18:14:16 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0002248871342070106 --loss=mse --num_layers=4 --optimizer=rmsprop --weight_decay=0.001 --weight_init=xavier
+2026-03-07 18:14:21 INFO Running runs: ['tstegp3z']
+2026-03-07 18:18:08 INFO Cleaning up finished run: 84lxolj5
+2026-03-07 18:18:09 INFO Agent received command: run
+2026-03-07 18:18:09 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0014117073818664494
+	loss: mse
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 18:18:09 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0014117073818664494 --loss=mse --num_layers=2 --optimizer=nag --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 18:18:14 INFO Running runs: ['1qf7urkq']
+2026-03-07 18:22:20 INFO Cleaning up finished run: tstegp3z
+2026-03-07 18:22:21 INFO Agent received command: run
+2026-03-07 18:22:21 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0005290751033246231
+	loss: mse
+	num_layers: 4
+	optimizer: nag
+	weight_decay: 0
+	weight_init: random
+2026-03-07 18:22:21 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0005290751033246231 --loss=mse --num_layers=4 --optimizer=nag --weight_decay=0 --weight_init=random
+2026-03-07 18:22:26 INFO Running runs: ['kykv8krs']
+2026-03-07 18:24:47 INFO Cleaning up finished run: 8rkwco6y
+2026-03-07 18:24:48 INFO Agent received command: run
+2026-03-07 18:24:48 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0012176150373945443
+	loss: mse
+	num_layers: 2
+	optimizer: sgd
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 18:24:48 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0012176150373945443 --loss=mse --num_layers=2 --optimizer=sgd --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 18:24:53 INFO Running runs: ['9eqlv613']
+2026-03-07 18:25:37 INFO Cleaning up finished run: gtdrcuec
+2026-03-07 18:25:38 INFO Agent received command: run
+2026-03-07 18:25:38 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0018497604870918176
+	loss: mse
+	num_layers: 2
+	optimizer: sgd
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 18:25:38 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0018497604870918176 --loss=mse --num_layers=2 --optimizer=sgd --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 18:25:44 INFO Running runs: ['xgmj6794']
+2026-03-07 18:26:56 INFO Cleaning up finished run: 1qf7urkq
+2026-03-07 18:26:57 INFO Agent received command: run
+2026-03-07 18:26:57 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.002302144679843992
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: nag
+	weight_decay: 0
+	weight_init: random
+2026-03-07 18:26:57 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.002302144679843992 --loss=cross_entropy --num_layers=5 --optimizer=nag --weight_decay=0 --weight_init=random
+2026-03-07 18:27:03 INFO Running runs: ['7uywxyup']
+2026-03-07 18:29:21 INFO Cleaning up finished run: xgmj6794
+2026-03-07 18:29:22 INFO Agent received command: run
+2026-03-07 18:29:22 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0032366911950670652
+	loss: mse
+	num_layers: 5
+	optimizer: sgd
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 18:29:22 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0032366911950670652 --loss=mse --num_layers=5 --optimizer=sgd --weight_decay=0.001 --weight_init=random
+2026-03-07 18:29:27 INFO Running runs: ['lsyjetep']
+2026-03-07 18:35:25 INFO Cleaning up finished run: 9eqlv613
+2026-03-07 18:35:26 INFO Agent received command: run
+2026-03-07 18:35:26 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0034899857996930155
+	loss: mse
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 18:35:26 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0034899857996930155 --loss=mse --num_layers=3 --optimizer=nag --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 18:35:31 INFO Running runs: ['496u9ryh']
+2026-03-07 18:36:11 INFO Cleaning up finished run: lsyjetep
+2026-03-07 18:36:12 INFO Agent received command: run
+2026-03-07 18:36:12 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0001041668234467873
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 18:36:12 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0001041668234467873 --loss=cross_entropy --num_layers=5 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=random
+2026-03-07 18:36:17 INFO Running runs: ['ucw9hdlr']
+2026-03-07 18:40:20 INFO Cleaning up finished run: kykv8krs
+2026-03-07 18:40:22 INFO Agent received command: run
+2026-03-07 18:40:22 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00015670083885425644
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: sgd
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 18:40:22 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00015670083885425644 --loss=cross_entropy --num_layers=3 --optimizer=sgd --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 18:40:27 INFO Running runs: ['gn2r798v']
+2026-03-07 18:44:43 INFO Cleaning up finished run: 496u9ryh
+2026-03-07 18:44:44 INFO Agent received command: run
+2026-03-07 18:44:44 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.001801602630771393
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: sgd
+	weight_decay: 0
+	weight_init: random
+2026-03-07 18:44:44 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.001801602630771393 --loss=cross_entropy --num_layers=3 --optimizer=sgd --weight_decay=0 --weight_init=random
+2026-03-07 18:44:49 INFO Running runs: ['dk3o2fyw']
+2026-03-07 18:45:49 INFO Cleaning up finished run: 7uywxyup
+2026-03-07 18:45:49 INFO Agent received command: run
+2026-03-07 18:45:49 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.001256046195313598
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 18:45:49 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.001256046195313598 --loss=cross_entropy --num_layers=2 --optimizer=momentum --weight_decay=0.0005 --weight_init=random
+2026-03-07 18:45:55 INFO Running runs: ['vpij7xqz']
+2026-03-07 18:49:29 INFO Cleaning up finished run: ucw9hdlr
+2026-03-07 18:49:30 INFO Agent received command: run
+2026-03-07 18:49:30 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0036066627392899375
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 18:49:30 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0036066627392899375 --loss=cross_entropy --num_layers=3 --optimizer=rmsprop --weight_decay=0.001 --weight_init=random
+2026-03-07 18:49:35 INFO Running runs: ['yvcedwrh']
+2026-03-07 18:54:55 INFO Cleaning up finished run: gn2r798v
+2026-03-07 18:54:56 INFO Agent received command: run
+2026-03-07 18:54:56 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.003255507594032652
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 18:54:56 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.003255507594032652 --loss=cross_entropy --num_layers=4 --optimizer=nag --weight_decay=0.0005 --weight_init=random
+2026-03-07 18:55:01 INFO Running runs: ['0rrxi281']
+2026-03-07 18:55:44 INFO Cleaning up finished run: dk3o2fyw
+2026-03-07 18:55:46 INFO Agent received command: run
+2026-03-07 18:55:46 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.006159471219123561
+	loss: mse
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 18:55:46 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.006159471219123561 --loss=mse --num_layers=2 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 18:55:51 INFO Running runs: ['q6efyg7u']
+2026-03-07 18:56:34 INFO Cleaning up finished run: vpij7xqz
+2026-03-07 18:56:35 INFO Agent received command: run
+2026-03-07 18:56:35 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0009134402460301526
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: sgd
+	weight_decay: 0
+	weight_init: random
+2026-03-07 18:56:35 INFO About to run command: python train.py --activation=tanh --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0009134402460301526 --loss=cross_entropy --num_layers=4 --optimizer=sgd --weight_decay=0 --weight_init=random
+2026-03-07 18:56:40 INFO Cleaning up finished run: yvcedwrh
+2026-03-07 18:56:40 INFO Running runs: ['gvdq9z9z']
+2026-03-07 18:56:41 INFO Agent received command: run
+2026-03-07 18:56:41 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0004906067978269995
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 18:56:41 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0004906067978269995 --loss=cross_entropy --num_layers=3 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 18:56:46 INFO Running runs: ['8u8px0mo']
+2026-03-07 19:03:34 INFO Cleaning up finished run: gvdq9z9z
+2026-03-07 19:03:35 INFO Agent received command: run
+2026-03-07 19:03:35 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.001207278028843932
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 19:03:35 INFO About to run command: python train.py --activation=tanh --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.001207278028843932 --loss=cross_entropy --num_layers=3 --optimizer=momentum --weight_decay=0 --weight_init=xavier
+2026-03-07 19:03:40 INFO Running runs: ['o6w1x6up']
+2026-03-07 19:05:33 INFO Cleaning up finished run: 0rrxi281
+2026-03-07 19:05:34 INFO Agent received command: run
+2026-03-07 19:05:34 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.002124019153241572
+	loss: mse
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 19:05:34 INFO About to run command: python train.py --activation=tanh --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.002124019153241572 --loss=mse --num_layers=3 --optimizer=nag --weight_decay=0 --weight_init=xavier
+2026-03-07 19:05:39 INFO Running runs: ['62pt2qt0']
+2026-03-07 19:06:35 INFO Cleaning up finished run: 8u8px0mo
+2026-03-07 19:06:36 INFO Agent received command: run
+2026-03-07 19:06:36 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.005317421270749354
+	loss: mse
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: random
+2026-03-07 19:06:36 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.005317421270749354 --loss=mse --num_layers=5 --optimizer=momentum --weight_decay=0 --weight_init=random
+2026-03-07 19:06:41 INFO Running runs: ['g7ul2l6i']
+2026-03-07 19:07:47 INFO Cleaning up finished run: q6efyg7u
+2026-03-07 19:07:48 INFO Agent received command: run
+2026-03-07 19:07:48 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.004656597058333092
+	loss: mse
+	num_layers: 5
+	optimizer: sgd
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 19:07:49 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.004656597058333092 --loss=mse --num_layers=5 --optimizer=sgd --weight_decay=0.0005 --weight_init=random
+2026-03-07 19:07:54 INFO Running runs: ['g3a2cs1f']
+2026-03-07 19:12:05 INFO Cleaning up finished run: g7ul2l6i
+2026-03-07 19:12:06 INFO Agent received command: run
+2026-03-07 19:12:06 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0004919037654736355
+	loss: mse
+	num_layers: 3
+	optimizer: sgd
+	weight_decay: 0
+	weight_init: random
+2026-03-07 19:12:06 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0004919037654736355 --loss=mse --num_layers=3 --optimizer=sgd --weight_decay=0 --weight_init=random
+2026-03-07 19:12:12 INFO Running runs: ['hlt5otxn']
+2026-03-07 19:12:57 INFO Cleaning up finished run: o6w1x6up
+2026-03-07 19:12:58 INFO Agent received command: run
+2026-03-07 19:12:58 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0012191798962964974
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 19:12:58 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0012191798962964974 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0.0005 --weight_init=random
+2026-03-07 19:13:01 INFO Cleaning up finished run: g3a2cs1f
+2026-03-07 19:13:03 INFO Agent received command: run
+2026-03-07 19:13:03 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0015831716124661882
+	loss: mse
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 19:13:03 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0015831716124661882 --loss=mse --num_layers=3 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 19:13:03 INFO Running runs: ['cqi2nmiq']
+2026-03-07 19:13:08 INFO Running runs: ['47gqsbdg']
+2026-03-07 19:14:56 INFO Cleaning up finished run: 62pt2qt0
+2026-03-07 19:14:57 INFO Agent received command: run
+2026-03-07 19:14:57 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0004285533595991053
+	loss: mse
+	num_layers: 4
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 19:14:57 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0004285533595991053 --loss=mse --num_layers=4 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 19:15:02 INFO Running runs: ['3y43hqvm']
+2026-03-07 19:21:01 INFO Cleaning up finished run: cqi2nmiq
+2026-03-07 19:21:02 INFO Agent received command: run
+2026-03-07 19:21:02 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0047329917613332185
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 19:21:02 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0047329917613332185 --loss=cross_entropy --num_layers=3 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 19:21:08 INFO Running runs: ['2if0rppd']
+2026-03-07 19:22:16 INFO Cleaning up finished run: 47gqsbdg
+2026-03-07 19:22:17 INFO Agent received command: run
+2026-03-07 19:22:17 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0008096317612287391
+	loss: mse
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 19:22:17 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0008096317612287391 --loss=mse --num_layers=2 --optimizer=rmsprop --weight_decay=0.001 --weight_init=random
+2026-03-07 19:22:22 INFO Running runs: ['jeudqrw3']
+2026-03-07 19:25:24 INFO Cleaning up finished run: hlt5otxn
+2026-03-07 19:25:25 INFO Cleaning up finished run: 2if0rppd
+2026-03-07 19:25:25 INFO Agent received command: run
+2026-03-07 19:25:25 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0009910121877130132
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: random
+2026-03-07 19:25:25 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0009910121877130132 --loss=cross_entropy --num_layers=3 --optimizer=momentum --weight_decay=0 --weight_init=random
+2026-03-07 19:25:26 INFO Agent received command: run
+2026-03-07 19:25:26 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0003988493590826569
+	loss: mse
+	num_layers: 2
+	optimizer: sgd
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 19:25:26 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0003988493590826569 --loss=mse --num_layers=2 --optimizer=sgd --weight_decay=0 --weight_init=xavier
+2026-03-07 19:25:30 INFO Running runs: ['zogga1gi']
+2026-03-07 19:25:31 INFO Running runs: ['ktl78w8k']
+2026-03-07 19:28:47 INFO Cleaning up finished run: ktl78w8k
+2026-03-07 19:28:48 INFO Agent received command: run
+2026-03-07 19:28:48 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00014591994418723049
+	loss: mse
+	num_layers: 5
+	optimizer: sgd
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 19:28:48 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00014591994418723049 --loss=mse --num_layers=5 --optimizer=sgd --weight_decay=0.001 --weight_init=xavier
+2026-03-07 19:28:53 INFO Running runs: ['xb13htul']
+2026-03-07 19:30:17 INFO Cleaning up finished run: 3y43hqvm
+2026-03-07 19:30:18 INFO Agent received command: run
+2026-03-07 19:30:18 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0069086487901860545
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 19:30:18 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0069086487901860545 --loss=cross_entropy --num_layers=5 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 19:30:23 INFO Running runs: ['w2n5kg82']
+2026-03-07 19:31:00 INFO Cleaning up finished run: zogga1gi
+2026-03-07 19:31:01 INFO Agent received command: run
+2026-03-07 19:31:01 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00014900179615353116
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 19:31:01 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00014900179615353116 --loss=cross_entropy --num_layers=5 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 19:31:06 INFO Running runs: ['1f3n97j7']
+2026-03-07 19:31:24 INFO Cleaning up finished run: jeudqrw3
+2026-03-07 19:31:25 INFO Agent received command: run
+2026-03-07 19:31:25 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00024291717551237375
+	loss: mse
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 19:31:25 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00024291717551237375 --loss=mse --num_layers=2 --optimizer=momentum --weight_decay=0.001 --weight_init=random
+2026-03-07 19:31:30 INFO Running runs: ['8tbvufif']
+2026-03-07 19:33:13 INFO Cleaning up finished run: xb13htul
+2026-03-07 19:33:15 INFO Agent received command: run
+2026-03-07 19:33:15 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0056897992682652734
+	loss: mse
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 19:33:15 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0056897992682652734 --loss=mse --num_layers=3 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 19:33:20 INFO Running runs: ['1s4kbxi2']
+2026-03-07 19:34:43 INFO Cleaning up finished run: w2n5kg82
+2026-03-07 19:34:44 INFO Agent received command: run
+2026-03-07 19:34:44 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0002365453928878603
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 19:34:44 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0002365453928878603 --loss=cross_entropy --num_layers=5 --optimizer=nag --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 19:34:50 INFO Running runs: ['o5cdlg87']
+2026-03-07 19:34:52 INFO Cleaning up finished run: 8tbvufif
+2026-03-07 19:34:53 INFO Agent received command: run
+2026-03-07 19:34:53 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0018952742766747649
+	loss: mse
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 19:34:53 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0018952742766747649 --loss=mse --num_layers=2 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 19:34:58 INFO Running runs: ['g5w3looj']
+2026-03-07 19:41:31 INFO Cleaning up finished run: g5w3looj
+2026-03-07 19:41:32 INFO Agent received command: run
+2026-03-07 19:41:32 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0006358377567762724
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 19:41:32 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0006358377567762724 --loss=cross_entropy --num_layers=3 --optimizer=rmsprop --weight_decay=0.001 --weight_init=random
+2026-03-07 19:41:37 INFO Running runs: ['d8akgy1i']
+2026-03-07 19:43:03 INFO Cleaning up finished run: o5cdlg87
+2026-03-07 19:43:04 INFO Agent received command: run
+2026-03-07 19:43:04 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.004163203640078328
+	loss: mse
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 19:43:04 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.004163203640078328 --loss=mse --num_layers=2 --optimizer=nag --weight_decay=0 --weight_init=xavier
+2026-03-07 19:43:09 INFO Running runs: ['xumxoyuu']
+2026-03-07 19:43:30 INFO Cleaning up finished run: 1s4kbxi2
+2026-03-07 19:43:31 INFO Agent received command: run
+2026-03-07 19:43:31 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0029437819493917756
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 19:43:31 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0029437819493917756 --loss=cross_entropy --num_layers=3 --optimizer=rmsprop --weight_decay=0.001 --weight_init=random
+2026-03-07 19:43:36 INFO Running runs: ['zbvw8hw7']
+2026-03-07 19:45:16 INFO Cleaning up finished run: 1f3n97j7
+2026-03-07 19:45:17 INFO Agent received command: run
+2026-03-07 19:45:17 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.001626292502762422
+	loss: mse
+	num_layers: 4
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 19:45:17 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.001626292502762422 --loss=mse --num_layers=4 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 19:45:22 INFO Running runs: ['f22tv3s8']
+2026-03-07 19:46:52 INFO Cleaning up finished run: xumxoyuu
+2026-03-07 19:46:53 INFO Agent received command: run
+2026-03-07 19:46:53 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0006265416787414989
+	loss: mse
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 19:46:53 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0006265416787414989 --loss=mse --num_layers=2 --optimizer=momentum --weight_decay=0.001 --weight_init=random
+2026-03-07 19:46:58 INFO Running runs: ['gk5nbbu9']
+2026-03-07 19:47:06 INFO Cleaning up finished run: d8akgy1i
+2026-03-07 19:47:07 INFO Agent received command: run
+2026-03-07 19:47:07 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0016802702267778547
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 19:47:07 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0016802702267778547 --loss=cross_entropy --num_layers=4 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 19:47:12 INFO Running runs: ['myg21guk']
+2026-03-07 19:49:16 INFO Cleaning up finished run: zbvw8hw7
+2026-03-07 19:49:17 INFO Agent received command: run
+2026-03-07 19:49:17 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.002744675796619723
+	loss: mse
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 19:49:17 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.002744675796619723 --loss=mse --num_layers=3 --optimizer=momentum --weight_decay=0.001 --weight_init=random
+2026-03-07 19:49:22 INFO Running runs: ['8wyzzsa6']
+2026-03-07 19:49:53 INFO Cleaning up finished run: f22tv3s8
+2026-03-07 19:49:54 INFO Agent received command: run
+2026-03-07 19:49:54 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0003645644234194426
+	loss: mse
+	num_layers: 4
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 19:49:54 INFO About to run command: python train.py --activation=tanh --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0003645644234194426 --loss=mse --num_layers=4 --optimizer=nag --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 19:49:59 INFO Running runs: ['r6s98t46']
+2026-03-07 19:51:40 INFO Cleaning up finished run: gk5nbbu9
+2026-03-07 19:51:41 INFO Agent received command: run
+2026-03-07 19:51:41 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0023281460827917965
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: sgd
+	weight_decay: 0
+	weight_init: random
+2026-03-07 19:51:41 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0023281460827917965 --loss=cross_entropy --num_layers=5 --optimizer=sgd --weight_decay=0 --weight_init=random
+2026-03-07 19:51:46 INFO Running runs: ['flmbbx72']
+2026-03-07 19:52:44 INFO Cleaning up finished run: 8wyzzsa6
+2026-03-07 19:52:45 INFO Agent received command: run
+2026-03-07 19:52:45 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.002884152740831434
+	loss: mse
+	num_layers: 4
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 19:52:45 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.002884152740831434 --loss=mse --num_layers=4 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 19:52:50 INFO Running runs: ['hwndezb9']
+2026-03-07 19:57:26 INFO Cleaning up finished run: hwndezb9
+2026-03-07 19:57:27 INFO Agent received command: run
+2026-03-07 19:57:27 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.004532126613515031
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 19:57:27 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.004532126613515031 --loss=cross_entropy --num_layers=3 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 19:57:32 INFO Running runs: ['7dehd9oj']
+2026-03-07 19:59:53 INFO Cleaning up finished run: r6s98t46
+2026-03-07 19:59:54 INFO Agent received command: run
+2026-03-07 19:59:54 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0017040049717457462
+	loss: mse
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 19:59:54 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0017040049717457462 --loss=mse --num_layers=4 --optimizer=rmsprop --weight_decay=0.001 --weight_init=xavier
+2026-03-07 19:59:59 INFO Running runs: ['8ht8lkb9']
+2026-03-07 20:00:18 INFO Cleaning up finished run: myg21guk
+2026-03-07 20:00:20 INFO Agent received command: run
+2026-03-07 20:00:20 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.002703290945325038
+	loss: mse
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 20:00:20 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.002703290945325038 --loss=mse --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 20:00:25 INFO Running runs: ['iiqh9xuv']
+2026-03-07 20:05:06 INFO Cleaning up finished run: iiqh9xuv
+2026-03-07 20:05:07 INFO Agent received command: run
+2026-03-07 20:05:07 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00012424312522407187
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: sgd
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 20:05:07 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00012424312522407187 --loss=cross_entropy --num_layers=5 --optimizer=sgd --weight_decay=0.001 --weight_init=random
+2026-03-07 20:05:12 INFO Running runs: ['od0pprgz']
+2026-03-07 20:05:45 INFO Cleaning up finished run: flmbbx72
+2026-03-07 20:05:46 INFO Agent received command: run
+2026-03-07 20:05:46 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0033189301130350027
+	loss: mse
+	num_layers: 4
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 20:05:46 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0033189301130350027 --loss=mse --num_layers=4 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 20:05:52 INFO Running runs: ['bs4igh74']
+2026-03-07 20:08:50 INFO Cleaning up finished run: 8ht8lkb9
+2026-03-07 20:08:51 INFO Agent received command: run
+2026-03-07 20:08:51 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00020393274068105
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:08:51 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00020393274068105 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 20:08:56 INFO Running runs: ['ifpv1eze']
+2026-03-07 20:10:15 INFO Cleaning up finished run: od0pprgz
+2026-03-07 20:10:16 INFO Agent received command: run
+2026-03-07 20:10:16 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.003687067209489677
+	loss: mse
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:10:16 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.003687067209489677 --loss=mse --num_layers=2 --optimizer=nag --weight_decay=0 --weight_init=xavier
+2026-03-07 20:10:21 INFO Running runs: ['2a0sfyf8']
+2026-03-07 20:11:05 INFO Cleaning up finished run: bs4igh74
+2026-03-07 20:11:06 INFO Agent received command: run
+2026-03-07 20:11:06 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0008498461095599615
+	loss: mse
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:11:06 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0008498461095599615 --loss=mse --num_layers=2 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 20:11:11 INFO Running runs: ['z1am6wkx']
+2026-03-07 20:11:53 INFO Cleaning up finished run: 7dehd9oj
+2026-03-07 20:11:54 INFO Agent received command: run
+2026-03-07 20:11:54 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.006063890970158981
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 20:11:54 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.006063890970158981 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 20:11:59 INFO Running runs: ['ighsev8o']
+2026-03-07 20:17:52 INFO Cleaning up finished run: 2a0sfyf8
+2026-03-07 20:17:53 INFO Agent received command: run
+2026-03-07 20:17:53 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0013395552169641867
+	loss: mse
+	num_layers: 5
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 20:17:53 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0013395552169641867 --loss=mse --num_layers=5 --optimizer=nag --weight_decay=0.0005 --weight_init=random
+2026-03-07 20:17:58 INFO Running runs: ['4yl9iar2']
+2026-03-07 20:21:35 INFO Cleaning up finished run: ifpv1eze
+2026-03-07 20:21:36 INFO Agent received command: run
+2026-03-07 20:21:36 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00013240695054922324
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: random
+2026-03-07 20:21:36 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00013240695054922324 --loss=cross_entropy --num_layers=4 --optimizer=rmsprop --weight_decay=0 --weight_init=random
+2026-03-07 20:21:41 INFO Running runs: ['r3sc1rjx']
+2026-03-07 20:23:02 INFO Cleaning up finished run: ighsev8o
+2026-03-07 20:23:03 INFO Agent received command: run
+2026-03-07 20:23:03 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.009565699848728045
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:23:03 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.009565699848728045 --loss=cross_entropy --num_layers=5 --optimizer=momentum --weight_decay=0 --weight_init=xavier
+2026-03-07 20:23:08 INFO Running runs: ['s16lmic6']
+2026-03-07 20:24:50 INFO Cleaning up finished run: z1am6wkx
+2026-03-07 20:24:51 INFO Agent received command: run
+2026-03-07 20:24:51 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0027623696293045397
+	loss: mse
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 20:24:51 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0027623696293045397 --loss=mse --num_layers=3 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 20:24:56 INFO Running runs: ['v4nt3c6m']
+2026-03-07 20:29:16 INFO Cleaning up finished run: v4nt3c6m
+2026-03-07 20:29:17 INFO Agent received command: run
+2026-03-07 20:29:17 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00018649559511735005
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: sgd
+	weight_decay: 0.0005
+	weight_init: random
+2026-03-07 20:29:17 INFO About to run command: python train.py --activation=sigmoid --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00018649559511735005 --loss=cross_entropy --num_layers=3 --optimizer=sgd --weight_decay=0.0005 --weight_init=random
+2026-03-07 20:29:22 INFO Running runs: ['fs64i0vj']
+2026-03-07 20:30:01 INFO Cleaning up finished run: r3sc1rjx
+2026-03-07 20:30:03 INFO Agent received command: run
+2026-03-07 20:30:03 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0013846575116125868
+	loss: mse
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:30:03 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0013846575116125868 --loss=mse --num_layers=3 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 20:30:08 INFO Running runs: ['z604d1bd']
+2026-03-07 20:33:34 INFO Cleaning up finished run: 4yl9iar2
+2026-03-07 20:33:35 INFO Agent received command: run
+2026-03-07 20:33:35 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.005962839198860717
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 20:33:35 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.005962839198860717 --loss=cross_entropy --num_layers=2 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 20:33:37 INFO Cleaning up finished run: fs64i0vj
+2026-03-07 20:33:38 INFO Agent received command: run
+2026-03-07 20:33:38 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.000327927389606044
+	loss: mse
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:33:38 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.000327927389606044 --loss=mse --num_layers=2 --optimizer=momentum --weight_decay=0 --weight_init=xavier
+2026-03-07 20:33:40 INFO Running runs: ['gvuke7kb']
+2026-03-07 20:33:41 INFO Cleaning up finished run: s16lmic6
+2026-03-07 20:33:42 INFO Agent received command: run
+2026-03-07 20:33:42 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0021986813052505766
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 20:33:42 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0021986813052505766 --loss=cross_entropy --num_layers=5 --optimizer=momentum --weight_decay=0.001 --weight_init=random
+2026-03-07 20:33:43 INFO Running runs: ['zaztzlfn']
+2026-03-07 20:33:47 INFO Running runs: ['0ucmv4ze']
+2026-03-07 20:38:00 INFO Cleaning up finished run: z604d1bd
+2026-03-07 20:38:03 INFO Agent received command: run
+2026-03-07 20:38:03 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0005405139178966727
+	loss: mse
+	num_layers: 4
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 20:38:03 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0005405139178966727 --loss=mse --num_layers=4 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 20:38:08 INFO Running runs: ['u0r01eft']
+2026-03-07 20:39:51 INFO Cleaning up finished run: gvuke7kb
+2026-03-07 20:39:52 INFO Agent received command: run
+2026-03-07 20:39:52 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.007677366954156813
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: random
+2026-03-07 20:39:52 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.007677366954156813 --loss=cross_entropy --num_layers=5 --optimizer=rmsprop --weight_decay=0 --weight_init=random
+2026-03-07 20:39:57 INFO Running runs: ['ww1a95on']
+2026-03-07 20:44:29 INFO Cleaning up finished run: 0ucmv4ze
+2026-03-07 20:44:30 INFO Agent received command: run
+2026-03-07 20:44:30 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00905735435623086
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:44:30 INFO About to run command: python train.py --activation=tanh --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00905735435623086 --loss=cross_entropy --num_layers=2 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 20:44:31 INFO Cleaning up finished run: zaztzlfn
+2026-03-07 20:44:32 INFO Agent received command: run
+2026-03-07 20:44:32 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0027195888547641815
+	loss: mse
+	num_layers: 4
+	optimizer: nag
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:44:32 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0027195888547641815 --loss=mse --num_layers=4 --optimizer=nag --weight_decay=0 --weight_init=xavier
+2026-03-07 20:44:35 INFO Running runs: ['hjrtdlcw']
+2026-03-07 20:44:37 INFO Running runs: ['4g0j2vql']
+2026-03-07 20:46:19 INFO Cleaning up finished run: ww1a95on
+2026-03-07 20:46:20 INFO Agent received command: run
+2026-03-07 20:46:20 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0058005215980947425
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 20:46:20 INFO About to run command: python train.py --activation=tanh --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0058005215980947425 --loss=cross_entropy --num_layers=4 --optimizer=rmsprop --weight_decay=0.001 --weight_init=random
+2026-03-07 20:46:25 INFO Running runs: ['utkbkd1p']
+2026-03-07 20:47:25 INFO Cleaning up finished run: u0r01eft
+2026-03-07 20:47:26 INFO Agent received command: run
+2026-03-07 20:47:26 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0017493241792875271
+	loss: mse
+	num_layers: 5
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:47:26 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0017493241792875271 --loss=mse --num_layers=5 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 20:47:31 INFO Running runs: ['0e308nl7']
+2026-03-07 20:49:59 INFO Cleaning up finished run: hjrtdlcw
+2026-03-07 20:50:00 INFO Agent received command: run
+2026-03-07 20:50:00 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0012798617814189978
+	loss: mse
+	num_layers: 2
+	optimizer: rmsprop
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 20:50:00 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0012798617814189978 --loss=mse --num_layers=2 --optimizer=rmsprop --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 20:50:05 INFO Running runs: ['zzmwb8il']
+2026-03-07 20:50:55 INFO Cleaning up finished run: utkbkd1p
+2026-03-07 20:50:56 INFO Agent received command: run
+2026-03-07 20:50:56 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.00012632419718473092
+	loss: mse
+	num_layers: 4
+	optimizer: momentum
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 20:50:56 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.00012632419718473092 --loss=mse --num_layers=4 --optimizer=momentum --weight_decay=0.001 --weight_init=random
+2026-03-07 20:51:01 INFO Running runs: ['ri2fg9vf']
+2026-03-07 20:51:52 INFO Cleaning up finished run: 4g0j2vql
+2026-03-07 20:51:54 INFO Agent received command: run
+2026-03-07 20:51:54 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.00490996341835985
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:51:54 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.00490996341835985 --loss=cross_entropy --num_layers=4 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 20:51:59 INFO Running runs: ['711lrgrh']
+2026-03-07 20:58:11 INFO Cleaning up finished run: ri2fg9vf
+2026-03-07 20:58:12 INFO Agent received command: run
+2026-03-07 20:58:12 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0030000140082646625
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 20:58:12 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0030000140082646625 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0 --weight_init=xavier
+2026-03-07 20:58:17 INFO Running runs: ['dwoh16v7']
+2026-03-07 21:02:49 INFO Cleaning up finished run: zzmwb8il
+2026-03-07 21:02:50 INFO Agent received command: run
+2026-03-07 21:02:50 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0008106944482909207
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 21:02:50 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0008106944482909207 --loss=cross_entropy --num_layers=2 --optimizer=momentum --weight_decay=0 --weight_init=xavier
+2026-03-07 21:02:52 INFO Cleaning up finished run: 711lrgrh
+2026-03-07 21:02:53 INFO Agent received command: run
+2026-03-07 21:02:53 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.004503520839747817
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 21:02:53 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.004503520839747817 --loss=cross_entropy --num_layers=3 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 21:02:55 INFO Running runs: ['o7z6whlb']
+2026-03-07 21:02:58 INFO Running runs: ['3nj36309']
+2026-03-07 21:03:11 INFO Cleaning up finished run: 0e308nl7
+2026-03-07 21:03:12 INFO Agent received command: run
+2026-03-07 21:03:12 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0007842774501220105
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 21:03:12 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0007842774501220105 --loss=cross_entropy --num_layers=5 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 21:03:17 INFO Running runs: ['5j6lwpug']
+2026-03-07 21:05:07 INFO Cleaning up finished run: dwoh16v7
+2026-03-07 21:05:08 INFO Agent received command: run
+2026-03-07 21:05:08 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.005425756983895875
+	loss: cross_entropy
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 21:05:08 INFO About to run command: python train.py --activation=relu --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.005425756983895875 --loss=cross_entropy --num_layers=4 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 21:05:13 INFO Running runs: ['8djq2n6a']
+2026-03-07 21:11:38 INFO Cleaning up finished run: 3nj36309
+2026-03-07 21:11:39 INFO Agent received command: run
+2026-03-07 21:11:39 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.000819852452256919
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: random
+2026-03-07 21:11:39 INFO About to run command: python train.py --activation=tanh --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.000819852452256919 --loss=cross_entropy --num_layers=3 --optimizer=nag --weight_decay=0.001 --weight_init=random
+2026-03-07 21:11:42 INFO Cleaning up finished run: o7z6whlb
+2026-03-07 21:11:43 INFO Agent received command: run
+2026-03-07 21:11:43 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.009269647105560528
+	loss: cross_entropy
+	num_layers: 2
+	optimizer: nag
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 21:11:43 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.009269647105560528 --loss=cross_entropy --num_layers=2 --optimizer=nag --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 21:11:44 INFO Running runs: ['zq0uncgm']
+2026-03-07 21:11:48 INFO Running runs: ['dzacu8d2']
+2026-03-07 21:12:29 INFO Cleaning up finished run: 5j6lwpug
+2026-03-07 21:12:30 INFO Agent received command: run
+2026-03-07 21:12:30 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 128
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.008964841030872368
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 21:12:30 INFO About to run command: python train.py --activation=relu --batch_size=128 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.008964841030872368 --loss=cross_entropy --num_layers=5 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 21:12:35 INFO Running runs: ['ea8lgx3y']
+2026-03-07 21:15:36 INFO Cleaning up finished run: dzacu8d2
+2026-03-07 21:15:37 INFO Agent received command: run
+2026-03-07 21:15:37 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.0001426688347602721
+	loss: mse
+	num_layers: 3
+	optimizer: momentum
+	weight_decay: 0
+	weight_init: random
+2026-03-07 21:15:37 INFO About to run command: python train.py --activation=sigmoid --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.0001426688347602721 --loss=mse --num_layers=3 --optimizer=momentum --weight_decay=0 --weight_init=random
+2026-03-07 21:15:40 INFO Cleaning up finished run: 8djq2n6a
+2026-03-07 21:15:41 INFO Agent received command: run
+2026-03-07 21:15:41 INFO Agent starting run with config:
+	activation: relu
+	batch_size: 64
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 128
+	learning_rate: 0.004064208648754872
+	loss: mse
+	num_layers: 4
+	optimizer: rmsprop
+	weight_decay: 0
+	weight_init: xavier
+2026-03-07 21:15:41 INFO About to run command: python train.py --activation=relu --batch_size=64 --dataset=fashion_mnist --epochs=15 --hidden_size=128 --learning_rate=0.004064208648754872 --loss=mse --num_layers=4 --optimizer=rmsprop --weight_decay=0 --weight_init=xavier
+2026-03-07 21:15:42 INFO Running runs: ['09fi0wj6']
+2026-03-07 21:15:46 INFO Running runs: ['3vz3f401']
+2026-03-07 21:16:18 INFO Cleaning up finished run: ea8lgx3y
+2026-03-07 21:16:19 INFO Agent received command: run
+2026-03-07 21:16:19 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.0009472491867307906
+	loss: cross_entropy
+	num_layers: 3
+	optimizer: nag
+	weight_decay: 0.001
+	weight_init: xavier
+2026-03-07 21:16:19 INFO About to run command: python train.py --activation=sigmoid --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.0009472491867307906 --loss=cross_entropy --num_layers=3 --optimizer=nag --weight_decay=0.001 --weight_init=xavier
+2026-03-07 21:16:24 INFO Running runs: ['50mq35ur']
+2026-03-07 21:17:03 INFO Cleaning up finished run: zq0uncgm
+2026-03-07 21:17:04 INFO Agent received command: run
+2026-03-07 21:17:04 INFO Agent starting run with config:
+	activation: tanh
+	batch_size: 32
+	dataset: fashion_mnist
+	epochs: 15
+	hidden_size: 64
+	learning_rate: 0.008317125555607936
+	loss: cross_entropy
+	num_layers: 5
+	optimizer: momentum
+	weight_decay: 0.0005
+	weight_init: xavier
+2026-03-07 21:17:04 INFO About to run command: python train.py --activation=tanh --batch_size=32 --dataset=fashion_mnist --epochs=15 --hidden_size=64 --learning_rate=0.008317125555607936 --loss=cross_entropy --num_layers=5 --optimizer=momentum --weight_decay=0.0005 --weight_init=xavier
+2026-03-07 21:17:09 INFO Running runs: ['0t8jurud']
+2026-03-07 21:24:42 INFO Cleaning up finished run: 09fi0wj6
+2026-03-07 21:24:42 INFO Agent received command: exit
+2026-03-07 21:24:42 INFO Received exit command. Killing runs and quitting.
+2026-03-07 21:25:32 INFO Cleaning up finished run: 3vz3f401
+2026-03-07 21:25:33 INFO Agent received command: exit
+2026-03-07 21:25:33 INFO Received exit command. Killing runs and quitting.
+2026-03-07 21:26:54 INFO Cleaning up finished run: 50mq35ur
+2026-03-07 21:26:54 INFO Agent received command: exit
+2026-03-07 21:26:54 INFO Received exit command. Killing runs and quitting.
+2026-03-07 21:28:31 INFO Cleaning up finished run: 0t8jurud
+2026-03-07 21:28:32 INFO Agent received command: exit
+2026-03-07 21:28:32 INFO Received exit command. Killing runs and quitting.

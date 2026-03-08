@@ -1,0 +1,22 @@
+{"time":"2026-03-07T17:05:07.0041778+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T17:05:07.624472+05:30","level":"INFO","msg":"stream: created new stream","id":"j6z34324"}
+{"time":"2026-03-07T17:05:07.6315381+05:30","level":"INFO","msg":"handler: started","stream_id":"j6z34324"}
+{"time":"2026-03-07T17:05:07.6431362+05:30","level":"INFO","msg":"sender: started","stream_id":"j6z34324"}
+{"time":"2026-03-07T17:05:07.6438288+05:30","level":"INFO","msg":"writer: started","stream_id":"j6z34324"}
+{"time":"2026-03-07T17:05:07.6466182+05:30","level":"INFO","msg":"stream: started","id":"j6z34324"}
+{"time":"2026-03-07T17:12:31.9622641+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":239921}
+{"time":"2026-03-07T17:12:31.9671829+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T17:12:31.9881501+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":239954}
+{"time":"2026-03-07T17:12:31.9923339+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":105}
+{"time":"2026-03-07T17:13:30.9984595+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":266583}
+{"time":"2026-03-07T17:13:30.9999928+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T17:13:31.0205865+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":266616}
+{"time":"2026-03-07T17:13:31.0458704+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":58}
+{"time":"2026-03-07T17:14:08.9324159+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":284674}
+{"time":"2026-03-07T17:14:08.9607761+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":180}
+{"time":"2026-03-07T17:14:40.3539083+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T17:14:40.7174745+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T17:14:40.7950428+05:30","level":"INFO","msg":"stream: closing","id":"j6z34324"}
+{"time":"2026-03-07T17:14:40.7960529+05:30","level":"INFO","msg":"handler: closed","stream_id":"j6z34324"}
+{"time":"2026-03-07T17:14:40.7979044+05:30","level":"INFO","msg":"sender: closed","stream_id":"j6z34324"}
+{"time":"2026-03-07T17:14:40.7985954+05:30","level":"INFO","msg":"stream: closed","id":"j6z34324"}

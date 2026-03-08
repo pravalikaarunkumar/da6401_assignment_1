@@ -1,0 +1,41 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.11.7",
+  "startedAt":  "2026-03-07T13:38:07.250405Z",
+  "args":  [
+    "--activation=sigmoid",
+    "--batch_size=128",
+    "--dataset=fashion_mnist",
+    "--epochs=15",
+    "--hidden_size=64",
+    "--learning_rate=0.004656597058333092",
+    "--loss=mse",
+    "--num_layers=5",
+    "--optimizer=sgd",
+    "--weight_decay=0.0005",
+    "--weight_init=random"
+  ],
+  "program":  "C:\\Users\\Pravalika Arunkumar\\Documents\\da6401_assignment_1_ns26z122\\src\\train.py",
+  "codePath":  "src\\train.py",
+  "codePathLocal":  "train.py",
+  "git":  {
+    "remote":  "https://github.com/pravalikaarunkumar/da6401_assignment_1.git",
+    "commit":  "671b6914588cc2eaaa0e82e93c7f132e34a2b5a6"
+  },
+  "email":  "ns26z122@smail.iitm.ac.in",
+  "root":  "C:\\Users\\Pravalika Arunkumar\\Documents\\da6401_assignment_1_ns26z122\\src",
+  "host":  "PravalikaLap",
+  "executable":  "C:\\Users\\Pravalika Arunkumar\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "244354904064",
+      "used":  "199969038336"
+    }
+  },
+  "memory":  {
+    "total":  "8299257856"
+  },
+  "writerId":  "eul9zchkzxljwxaryq0a9ghgibyotit3"
+}

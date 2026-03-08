@@ -1,0 +1,20 @@
+{"time":"2026-03-07T17:57:09.9430037+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T17:57:10.5026783+05:30","level":"INFO","msg":"stream: created new stream","id":"oz1klbma"}
+{"time":"2026-03-07T17:57:10.504327+05:30","level":"INFO","msg":"handler: started","stream_id":"oz1klbma"}
+{"time":"2026-03-07T17:57:10.509991+05:30","level":"INFO","msg":"stream: started","id":"oz1klbma"}
+{"time":"2026-03-07T17:57:10.5130119+05:30","level":"INFO","msg":"writer: started","stream_id":"oz1klbma"}
+{"time":"2026-03-07T17:57:10.5130119+05:30","level":"INFO","msg":"sender: started","stream_id":"oz1klbma"}
+{"time":"2026-03-07T18:02:46.7585644+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T18:02:46.7590773+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":128781}
+{"time":"2026-03-07T18:02:46.7622163+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":128814}
+{"time":"2026-03-07T18:02:46.7672573+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":60}
+{"time":"2026-03-07T18:05:38.0592935+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":199400}
+{"time":"2026-03-07T18:05:38.0592935+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T18:05:38.0646735+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":199433}
+{"time":"2026-03-07T18:05:38.0713416+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":72}
+{"time":"2026-03-07T18:13:59.6285855+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T18:14:00.158154+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T18:14:00.4256288+05:30","level":"INFO","msg":"stream: closing","id":"oz1klbma"}
+{"time":"2026-03-07T18:14:00.4451196+05:30","level":"INFO","msg":"handler: closed","stream_id":"oz1klbma"}
+{"time":"2026-03-07T18:14:00.4534588+05:30","level":"INFO","msg":"sender: closed","stream_id":"oz1klbma"}
+{"time":"2026-03-07T18:14:00.4534588+05:30","level":"INFO","msg":"stream: closed","id":"oz1klbma"}

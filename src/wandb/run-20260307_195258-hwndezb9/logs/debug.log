@@ -1,0 +1,25 @@
+2026-03-07 19:52:58,886 INFO    MainThread:23396 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-03-07 19:52:58,887 INFO    MainThread:23396 [wandb_setup.py:_flush():81] Configure stats pid to 23396
+2026-03-07 19:52:58,887 INFO    MainThread:23396 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-07 19:52:58,888 INFO    MainThread:23396 [wandb_init.py:setup_run_log_directory():717] Logging user logs to C:\Users\Pravalika Arunkumar\Documents\da6401_assignment_1_ns26z122\src\wandb\run-20260307_195258-hwndezb9\logs\debug.log
+2026-03-07 19:52:58,888 INFO    MainThread:23396 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to C:\Users\Pravalika Arunkumar\Documents\da6401_assignment_1_ns26z122\src\wandb\run-20260307_195258-hwndezb9\logs\debug-internal.log
+2026-03-07 19:52:58,889 INFO    MainThread:23396 [wandb_init.py:init():844] calling init triggers
+2026-03-07 19:52:58,889 INFO    MainThread:23396 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'sigmoid', 'batch_size': 128, 'dataset': 'fashion_mnist', 'epochs': 15, 'hidden_size': 64, 'learning_rate': 0.002884152740831434, 'loss': 'mse', 'num_layers': 4, 'optimizer': 'momentum', 'weight_decay': 0.0005, 'weight_init': 'xavier'}
+config: {'dataset': 'fashion_mnist', 'epochs': 15, 'batch_size': 128, 'loss': 'mse', 'optimizer': 'momentum', 'learning_rate': 0.002884152740831434, 'weight_decay': 0.0005, 'num_layers': 4, 'hidden_size': 64, 'hidden_layers': None, 'activation': 'sigmoid', 'weight_init': 'xavier', 'wandb_project': 'da6401_assignment1', 'model_save_path': 'best_model.npy', 'model_path': 'best_model.npy', '_wandb': {}}
+2026-03-07 19:52:58,889 INFO    MainThread:23396 [wandb_init.py:init():892] starting backend
+2026-03-07 19:53:02,467 INFO    MainThread:23396 [wandb_init.py:init():895] sending inform_init request
+2026-03-07 19:53:02,516 INFO    MainThread:23396 [wandb_init.py:init():903] backend started and connected
+2026-03-07 19:53:02,519 INFO    MainThread:23396 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'sigmoid', 'batch_size': 128, 'dataset': 'fashion_mnist', 'epochs': 15, 'hidden_size': 64, 'learning_rate': 0.002884152740831434, 'loss': 'mse', 'num_layers': 4, 'optimizer': 'momentum', 'weight_decay': 0.0005, 'weight_init': 'xavier'}
+2026-03-07 19:53:02,521 INFO    MainThread:23396 [wandb_init.py:init():973] updated telemetry
+2026-03-07 19:53:02,647 INFO    MainThread:23396 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-07 19:53:03,514 INFO    MainThread:23396 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-07 19:53:05,408 INFO    MainThread:23396 [wandb_run.py:_console_start():2524] atexit reg
+2026-03-07 19:53:05,409 INFO    MainThread:23396 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-03-07 19:53:05,409 INFO    MainThread:23396 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-03-07 19:53:05,410 INFO    MainThread:23396 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-03-07 19:53:05,425 INFO    MainThread:23396 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-07 19:57:17,513 INFO    MainThread:23396 [wandb_run.py:_finish():2291] finishing run ns26z122pravalika-indian-institute-of-technology-madras/da6401_assignment_1_ns26z122-src/hwndezb9
+2026-03-07 19:57:17,531 INFO    MainThread:23396 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-03-07 19:57:17,547 INFO    MainThread:23396 [wandb_run.py:_restore():2472] restore
+2026-03-07 19:57:17,548 INFO    MainThread:23396 [wandb_run.py:_restore():2478] restore done
+2026-03-07 19:57:20,363 INFO    MainThread:23396 [wandb_run.py:_footer_sync_info():3868] logging synced files

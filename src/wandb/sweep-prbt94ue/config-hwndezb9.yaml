@@ -1,0 +1,24 @@
+wandb_version: 1
+
+activation:
+  value: sigmoid
+batch_size:
+  value: 128
+dataset:
+  value: fashion_mnist
+epochs:
+  value: 15
+hidden_size:
+  value: 64
+learning_rate:
+  value: 0.002884152740831434
+loss:
+  value: mse
+num_layers:
+  value: 4
+optimizer:
+  value: momentum
+weight_decay:
+  value: 0.0005
+weight_init:
+  value: xavier

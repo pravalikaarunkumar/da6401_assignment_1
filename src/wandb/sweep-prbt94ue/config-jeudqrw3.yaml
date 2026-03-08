@@ -1,0 +1,24 @@
+wandb_version: 1
+
+activation:
+  value: sigmoid
+batch_size:
+  value: 32
+dataset:
+  value: fashion_mnist
+epochs:
+  value: 15
+hidden_size:
+  value: 64
+learning_rate:
+  value: 0.0008096317612287391
+loss:
+  value: mse
+num_layers:
+  value: 2
+optimizer:
+  value: rmsprop
+weight_decay:
+  value: 0.001
+weight_init:
+  value: random

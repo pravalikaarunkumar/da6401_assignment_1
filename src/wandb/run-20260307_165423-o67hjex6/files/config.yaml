@@ -1,0 +1,95 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            8gsuhgkuwo05avcrvps2d3lsobsi1wp5:
+                args:
+                    - --activation=sigmoid
+                    - --batch_size=64
+                    - --dataset=fashion_mnist
+                    - --epochs=15
+                    - --hidden_size=128
+                    - --learning_rate=0.00517573845203844
+                    - --loss=mse
+                    - --num_layers=5
+                    - --optimizer=sgd
+                    - --weight_decay=0
+                    - --weight_init=xavier
+                codePath: src\train.py
+                codePathLocal: train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "244354904064"
+                        used: "199131422720"
+                email: ns26z122@smail.iitm.ac.in
+                executable: C:\Users\Pravalika Arunkumar\AppData\Local\Programs\Python\Python311\python.exe
+                git:
+                    commit: 671b6914588cc2eaaa0e82e93c7f132e34a2b5a6
+                    remote: https://github.com/pravalikaarunkumar/da6401_assignment_1.git
+                host: PravalikaLap
+                memory:
+                    total: "8299257856"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\Pravalika Arunkumar\Documents\da6401_assignment_1_ns26z122\src\train.py
+                python: CPython 3.11.7
+                root: C:\Users\Pravalika Arunkumar\Documents\da6401_assignment_1_ns26z122\src
+                startedAt: "2026-03-07T11:24:23.628931Z"
+                writerId: 8gsuhgkuwo05avcrvps2d3lsobsi1wp5
+        m: []
+        python_version: 3.11.7
+        t:
+            "1":
+                - 5
+                - 53
+                - 105
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+                - 105
+            "3":
+                - 2
+                - 13
+                - 14
+                - 16
+                - 41
+                - 62
+            "4": 3.11.7
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+activation:
+    value: sigmoid
+batch_size:
+    value: 64
+dataset:
+    value: fashion_mnist
+epochs:
+    value: 15
+hidden_layers:
+    value: null
+hidden_size:
+    value: 128
+learning_rate:
+    value: 0.00517573845203844
+loss:
+    value: mse
+model_path:
+    value: best_model.npy
+model_save_path:
+    value: best_model.npy
+num_layers:
+    value: 5
+optimizer:
+    value: sgd
+wandb_project:
+    value: da6401_assignment1
+weight_decay:
+    value: 0
+weight_init:
+    value: xavier

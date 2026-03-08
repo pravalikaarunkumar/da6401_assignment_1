@@ -1,0 +1,12 @@
+{"time":"2026-03-07T15:30:26.7079193+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T15:30:27.7175713+05:30","level":"INFO","msg":"stream: created new stream","id":"her5sizb"}
+{"time":"2026-03-07T15:30:27.721328+05:30","level":"INFO","msg":"handler: started","stream_id":"her5sizb"}
+{"time":"2026-03-07T15:30:27.729922+05:30","level":"INFO","msg":"sender: started","stream_id":"her5sizb"}
+{"time":"2026-03-07T15:30:27.729922+05:30","level":"INFO","msg":"stream: started","id":"her5sizb"}
+{"time":"2026-03-07T15:30:27.7304327+05:30","level":"INFO","msg":"writer: started","stream_id":"her5sizb"}
+{"time":"2026-03-07T15:35:40.6067083+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T15:35:40.9765021+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T15:35:41.3583863+05:30","level":"INFO","msg":"stream: closing","id":"her5sizb"}
+{"time":"2026-03-07T15:35:41.3605837+05:30","level":"INFO","msg":"handler: closed","stream_id":"her5sizb"}
+{"time":"2026-03-07T15:35:41.3644249+05:30","level":"INFO","msg":"sender: closed","stream_id":"her5sizb"}
+{"time":"2026-03-07T15:35:41.3654658+05:30","level":"INFO","msg":"stream: closed","id":"her5sizb"}

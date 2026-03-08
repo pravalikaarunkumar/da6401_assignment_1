@@ -1,0 +1,20 @@
+{"time":"2026-03-07T17:25:33.2273744+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T17:25:33.8663599+05:30","level":"INFO","msg":"stream: created new stream","id":"a58wndfi"}
+{"time":"2026-03-07T17:25:33.867372+05:30","level":"INFO","msg":"handler: started","stream_id":"a58wndfi"}
+{"time":"2026-03-07T17:25:33.8736041+05:30","level":"INFO","msg":"writer: started","stream_id":"a58wndfi"}
+{"time":"2026-03-07T17:25:33.8736041+05:30","level":"INFO","msg":"sender: started","stream_id":"a58wndfi"}
+{"time":"2026-03-07T17:25:33.8736041+05:30","level":"INFO","msg":"stream: started","id":"a58wndfi"}
+{"time":"2026-03-07T17:28:32.2720327+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":44564}
+{"time":"2026-03-07T17:28:32.2815398+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":44596}
+{"time":"2026-03-07T17:28:32.2771461+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T17:28:32.2903861+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":38}
+{"time":"2026-03-07T17:32:28.1486005+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":117628}
+{"time":"2026-03-07T17:32:28.1486005+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T17:32:28.1507706+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":117661}
+{"time":"2026-03-07T17:32:28.1524414+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":20}
+{"time":"2026-03-07T17:34:18.1392332+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T17:34:18.5226734+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T17:34:18.6033255+05:30","level":"INFO","msg":"stream: closing","id":"a58wndfi"}
+{"time":"2026-03-07T17:34:18.6033255+05:30","level":"INFO","msg":"handler: closed","stream_id":"a58wndfi"}
+{"time":"2026-03-07T17:34:18.6065384+05:30","level":"INFO","msg":"sender: closed","stream_id":"a58wndfi"}
+{"time":"2026-03-07T17:34:18.6071725+05:30","level":"INFO","msg":"stream: closed","id":"a58wndfi"}

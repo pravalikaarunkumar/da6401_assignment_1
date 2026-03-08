@@ -1,0 +1,12 @@
+{"time":"2026-03-07T22:25:21.8126156+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T22:25:22.3175658+05:30","level":"INFO","msg":"stream: created new stream","id":"uzsmt64a"}
+{"time":"2026-03-07T22:25:22.318169+05:30","level":"INFO","msg":"handler: started","stream_id":"uzsmt64a"}
+{"time":"2026-03-07T22:25:22.3257662+05:30","level":"INFO","msg":"stream: started","id":"uzsmt64a"}
+{"time":"2026-03-07T22:25:22.326465+05:30","level":"INFO","msg":"writer: started","stream_id":"uzsmt64a"}
+{"time":"2026-03-07T22:25:22.326465+05:30","level":"INFO","msg":"sender: started","stream_id":"uzsmt64a"}
+{"time":"2026-03-07T22:27:17.767988+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T22:27:18.1233832+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T22:27:18.169695+05:30","level":"INFO","msg":"stream: closing","id":"uzsmt64a"}
+{"time":"2026-03-07T22:27:18.169695+05:30","level":"INFO","msg":"handler: closed","stream_id":"uzsmt64a"}
+{"time":"2026-03-07T22:27:18.170273+05:30","level":"INFO","msg":"sender: closed","stream_id":"uzsmt64a"}
+{"time":"2026-03-07T22:27:18.1709203+05:30","level":"INFO","msg":"stream: closed","id":"uzsmt64a"}

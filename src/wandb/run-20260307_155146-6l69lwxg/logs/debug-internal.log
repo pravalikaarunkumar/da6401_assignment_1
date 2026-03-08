@@ -1,0 +1,14 @@
+{"time":"2026-03-07T15:51:52.0853718+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T15:51:52.9267965+05:30","level":"INFO","msg":"stream: created new stream","id":"6l69lwxg"}
+{"time":"2026-03-07T15:51:52.9337291+05:30","level":"INFO","msg":"handler: started","stream_id":"6l69lwxg"}
+{"time":"2026-03-07T15:51:52.9424328+05:30","level":"INFO","msg":"stream: started","id":"6l69lwxg"}
+{"time":"2026-03-07T15:51:52.9485202+05:30","level":"INFO","msg":"sender: started","stream_id":"6l69lwxg"}
+{"time":"2026-03-07T15:51:52.9524636+05:30","level":"INFO","msg":"writer: started","stream_id":"6l69lwxg"}
+{"time":"2026-03-07T15:54:06.0029236+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":16565}
+{"time":"2026-03-07T15:54:06.0060852+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":29}
+{"time":"2026-03-07T16:00:02.3548081+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T16:00:02.852019+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T16:00:02.992117+05:30","level":"INFO","msg":"stream: closing","id":"6l69lwxg"}
+{"time":"2026-03-07T16:00:02.9938001+05:30","level":"INFO","msg":"handler: closed","stream_id":"6l69lwxg"}
+{"time":"2026-03-07T16:00:03.0243594+05:30","level":"INFO","msg":"sender: closed","stream_id":"6l69lwxg"}
+{"time":"2026-03-07T16:00:03.0243594+05:30","level":"INFO","msg":"stream: closed","id":"6l69lwxg"}

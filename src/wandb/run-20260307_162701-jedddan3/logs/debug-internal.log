@@ -1,0 +1,20 @@
+{"time":"2026-03-07T16:27:05.8275366+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T16:27:06.463767+05:30","level":"INFO","msg":"stream: created new stream","id":"jedddan3"}
+{"time":"2026-03-07T16:27:06.464314+05:30","level":"INFO","msg":"handler: started","stream_id":"jedddan3"}
+{"time":"2026-03-07T16:27:06.4695655+05:30","level":"INFO","msg":"stream: started","id":"jedddan3"}
+{"time":"2026-03-07T16:27:06.4716224+05:30","level":"INFO","msg":"writer: started","stream_id":"jedddan3"}
+{"time":"2026-03-07T16:27:06.4716224+05:30","level":"INFO","msg":"sender: started","stream_id":"jedddan3"}
+{"time":"2026-03-07T16:28:10.1610199+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":17742}
+{"time":"2026-03-07T16:28:10.1617958+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T16:28:10.1628876+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":17775}
+{"time":"2026-03-07T16:28:10.1648123+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":65}
+{"time":"2026-03-07T16:37:26.9826449+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T16:37:26.9826449+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":260521}
+{"time":"2026-03-07T16:37:26.9841218+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":260554}
+{"time":"2026-03-07T16:37:26.99177+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":48}
+{"time":"2026-03-07T16:39:05.2132025+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T16:39:05.5888033+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T16:39:05.729552+05:30","level":"INFO","msg":"stream: closing","id":"jedddan3"}
+{"time":"2026-03-07T16:39:05.7300796+05:30","level":"INFO","msg":"handler: closed","stream_id":"jedddan3"}
+{"time":"2026-03-07T16:39:05.7356225+05:30","level":"INFO","msg":"sender: closed","stream_id":"jedddan3"}
+{"time":"2026-03-07T16:39:05.7356225+05:30","level":"INFO","msg":"stream: closed","id":"jedddan3"}

@@ -1,0 +1,12 @@
+{"time":"2026-03-07T18:07:10.3313699+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T18:07:11.0380354+05:30","level":"INFO","msg":"stream: created new stream","id":"gtdrcuec"}
+{"time":"2026-03-07T18:07:11.0410056+05:30","level":"INFO","msg":"handler: started","stream_id":"gtdrcuec"}
+{"time":"2026-03-07T18:07:11.0545602+05:30","level":"INFO","msg":"stream: started","id":"gtdrcuec"}
+{"time":"2026-03-07T18:07:11.0558222+05:30","level":"INFO","msg":"sender: started","stream_id":"gtdrcuec"}
+{"time":"2026-03-07T18:07:11.0571943+05:30","level":"INFO","msg":"writer: started","stream_id":"gtdrcuec"}
+{"time":"2026-03-07T18:25:27.9059098+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T18:25:28.2558848+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T18:25:28.3250557+05:30","level":"INFO","msg":"stream: closing","id":"gtdrcuec"}
+{"time":"2026-03-07T18:25:28.3250557+05:30","level":"INFO","msg":"handler: closed","stream_id":"gtdrcuec"}
+{"time":"2026-03-07T18:25:28.327392+05:30","level":"INFO","msg":"sender: closed","stream_id":"gtdrcuec"}
+{"time":"2026-03-07T18:25:28.327392+05:30","level":"INFO","msg":"stream: closed","id":"gtdrcuec"}

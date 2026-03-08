@@ -1,0 +1,20 @@
+{"time":"2026-03-07T21:03:06.1701258+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T21:03:06.6396174+05:30","level":"INFO","msg":"stream: created new stream","id":"o7z6whlb"}
+{"time":"2026-03-07T21:03:06.6396174+05:30","level":"INFO","msg":"handler: started","stream_id":"o7z6whlb"}
+{"time":"2026-03-07T21:03:06.6428815+05:30","level":"INFO","msg":"sender: started","stream_id":"o7z6whlb"}
+{"time":"2026-03-07T21:03:06.6434177+05:30","level":"INFO","msg":"writer: started","stream_id":"o7z6whlb"}
+{"time":"2026-03-07T21:03:06.6434177+05:30","level":"INFO","msg":"stream: started","id":"o7z6whlb"}
+{"time":"2026-03-07T21:04:58.4249006+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":56533}
+{"time":"2026-03-07T21:04:58.4313428+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":56565}
+{"time":"2026-03-07T21:04:58.4259128+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T21:04:58.4337118+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":151}
+{"time":"2026-03-07T21:06:01.7688174+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":100574}
+{"time":"2026-03-07T21:06:01.7688174+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-07T21:06:01.7695897+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":100611}
+{"time":"2026-03-07T21:06:01.7711517+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":66}
+{"time":"2026-03-07T21:11:33.8567526+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T21:11:34.2342915+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T21:11:34.2890705+05:30","level":"INFO","msg":"stream: closing","id":"o7z6whlb"}
+{"time":"2026-03-07T21:11:34.2890705+05:30","level":"INFO","msg":"handler: closed","stream_id":"o7z6whlb"}
+{"time":"2026-03-07T21:11:34.2905946+05:30","level":"INFO","msg":"sender: closed","stream_id":"o7z6whlb"}
+{"time":"2026-03-07T21:11:34.2905946+05:30","level":"INFO","msg":"stream: closed","id":"o7z6whlb"}

@@ -1,0 +1,12 @@
+{"time":"2026-03-07T15:37:16.157571+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T15:37:16.7221397+05:30","level":"INFO","msg":"stream: created new stream","id":"lte8phi4"}
+{"time":"2026-03-07T15:37:16.7226638+05:30","level":"INFO","msg":"handler: started","stream_id":"lte8phi4"}
+{"time":"2026-03-07T15:37:16.7289245+05:30","level":"INFO","msg":"stream: started","id":"lte8phi4"}
+{"time":"2026-03-07T15:37:16.7289245+05:30","level":"INFO","msg":"sender: started","stream_id":"lte8phi4"}
+{"time":"2026-03-07T15:37:16.7294557+05:30","level":"INFO","msg":"writer: started","stream_id":"lte8phi4"}
+{"time":"2026-03-07T15:42:03.8550071+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T15:42:04.335762+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T15:42:04.453059+05:30","level":"INFO","msg":"stream: closing","id":"lte8phi4"}
+{"time":"2026-03-07T15:42:04.456006+05:30","level":"INFO","msg":"handler: closed","stream_id":"lte8phi4"}
+{"time":"2026-03-07T15:42:04.4578916+05:30","level":"INFO","msg":"sender: closed","stream_id":"lte8phi4"}
+{"time":"2026-03-07T15:42:04.4578916+05:30","level":"INFO","msg":"stream: closed","id":"lte8phi4"}
