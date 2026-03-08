@@ -6,5 +6,4 @@ https://api.wandb.ai/links/ns26z122pravalika-indian-institute-of-technology-madr
 
 ## GitHub Repo Link:
 https://github.com/pravalikaarunkumar/da6401_assignment_1
----
 
