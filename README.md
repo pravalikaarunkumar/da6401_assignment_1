@@ -8,4 +8,3 @@ https://api.wandb.ai/links/ns26z122pravalika-indian-institute-of-technology-madr
 https://github.com/pravalikaarunkumar/da6401_assignment_1
 ---
 
-Good luck with your implementation!
